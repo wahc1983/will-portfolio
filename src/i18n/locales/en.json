@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Will Portfolio"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Full Stack Developer",
+    "description1": "I'm a passionate full stack developer with experience in modern web technologies. I love creating efficient, scalable, and user-friendly applications that solve real-world problems.",
+    "description2": "With a strong foundation in both frontend and backend development, I enjoy working with React, Node.js, and various databases to build complete web solutions.",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "technologies": "Technologies"
+    },
+    "imageAlt": "Your Photo"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "jobs": [
+      {
+        "title": "Senior Full Stack Developer",
+        "company": "Tech Company",
+        "period": "2022 - Present",
+        "description": "Led development of multiple web applications using React, Node.js, and MongoDB. Mentored junior developers and implemented best practices."
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "Digital Agency",
+        "period": "2021 - 2022",
+        "description": "Developed responsive web applications and collaborated with design teams to create pixel-perfect user interfaces."
+      },
+      {
+        "title": "Junior Developer",
+        "company": "Startup Inc",
+        "period": "2020 - 2021",
+        "description": "Built and maintained web applications, learned modern development practices, and contributed to team projects."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Others"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "list": [
+      {
+        "title": "E-Commerce Platform",
+        "description": "A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard."
+      },
+      {
+        "title": "Task Management App",
+        "description": "A collaborative task management application with real-time updates and team collaboration features."
+      },
+      {
+        "title": "Weather Dashboard",
+        "description": "A responsive weather application with location-based forecasts and interactive charts."
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A modern, responsive portfolio website showcasing projects and skills with smooth animations."
+      }
+    ],
+    "buttons": {
+      "demo": "Live Demo",
+      "github": "GitHub"
+    },
+    "imageAlt": "Project Image"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together!",
+    "description": "I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!",
+    "details": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message",
+      "success": "Thank you for your message! I'll get back to you soon."
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "selector": "Language",
+    "spanish": "Spanish",
+    "english": "English",
+    "french": "French"
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
+  }
+}

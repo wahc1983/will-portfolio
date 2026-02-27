@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "header": {
+    "title": "Will Portfolio"
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "subtitle": "Desarrollador Full Stack",
+    "description1": "Soy un desarrollador full stack apasionado con experiencia en tecnologías web modernas. Me encanta crear aplicaciones eficientes, escalables y fáciles de usar que resuelven problemas del mundo real.",
+    "description2": "Con una sólida base tanto en desarrollo frontend como backend, disfruto trabajando con React, Node.js y varias bases de datos para construir soluciones web completas.",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Completados",
+      "technologies": "Tecnologías"
+    },
+    "imageAlt": "Tu Foto"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "jobs": [
+      {
+        "title": "Desarrollador Full Stack Senior",
+        "company": "Empresa Tecnológica",
+        "period": "2022 - Presente",
+        "description": "Lideré el desarrollo de múltiples aplicaciones web usando React, Node.js y MongoDB. Mentoricé desarrolladores junior e implementé mejores prácticas."
+      },
+      {
+        "title": "Desarrollador Frontend",
+        "company": "Agencia Digital",
+        "period": "2021 - 2022",
+        "description": "Desarrollé aplicaciones web responsivas y colaboré con equipos de diseño para crear interfaces de usuario pixel-perfect."
+      },
+      {
+        "title": "Desarrollador Junior",
+        "company": "Startup Inc",
+        "period": "2020 - 2021",
+        "description": "Construí y mantuve aplicaciones web, aprendí prácticas de desarrollo modernas y contribuí a proyectos de equipo."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Herramientas y Otros"
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "list": [
+      {
+        "title": "Plataforma E-Commerce",
+        "description": "Una solución e-commerce full-stack con autenticación de usuarios, integración de pagos y panel de administración."
+      },
+      {
+        "title": "App de Gestión de Tareas",
+        "description": "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de colaboración en equipo."
+      },
+      {
+        "title": "Dashboard del Clima",
+        "description": "Una aplicación del clima responsiva con pronósticos basados en ubicación y gráficos interactivos."
+      },
+      {
+        "title": "Sitio Web Portfolio",
+        "description": "Un sitio web portfolio moderno y responsivo que muestra proyectos y habilidades con animaciones suaves."
+      }
+    ],
+    "buttons": {
+      "demo": "Demo en Vivo",
+      "github": "GitHub"
+    },
+    "imageAlt": "Imagen del Proyecto"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "¡Trabajemos juntos!",
+    "description": "Siempre estoy interesado en nuevas oportunidades y proyectos emocionantes. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡no dudes en contactarme!",
+    "details": {
+      "email": "Correo",
+      "phone": "Teléfono",
+      "location": "Ubicación"
+    },
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Correo",
+      "message": "Tu Mensaje",
+      "send": "Enviar Mensaje",
+      "success": "¡Gracias por tu mensaje! Te responderé pronto."
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "language": {
+    "selector": "Idioma",
+    "spanish": "Español",
+    "english": "Inglés",
+    "french": "Francés"
+  },
+  "theme": {
+    "switchToDark": "Cambiar a modo oscuro",
+    "switchToLight": "Cambiar a modo claro"
+  }
+}

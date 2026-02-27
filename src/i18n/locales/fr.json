@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "header": {
+    "title": "Will Portfolio"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Développeur Full Stack",
+    "description1": "Je suis un développeur full stack passionné avec de l'expérience dans les technologies web modernes. J'adore créer des applications efficaces, évolutives et conviviales qui résolvent des problèmes du monde réel.",
+    "description2": "Avec une solide base en développement frontend et backend, j'aime travailler avec React, Node.js et diverses bases de données pour construire des solutions web complètes.",
+    "stats": {
+      "experience": "Années d'Expérience",
+      "projects": "Projets Terminés",
+      "technologies": "Technologies"
+    },
+    "imageAlt": "Votre Photo"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "jobs": [
+      {
+        "title": "Développeur Full Stack Senior",
+        "company": "Entreprise Tech",
+        "period": "2022 - Présent",
+        "description": "J'ai dirigé le développement de plusieurs applications web utilisant React, Node.js et MongoDB. J'ai encadré des développeurs juniors et implémenté les meilleures pratiques."
+      },
+      {
+        "title": "Développeur Frontend",
+        "company": "Agence Digitale",
+        "period": "2021 - 2022",
+        "description": "J'ai développé des applications web responsives et collaboré avec les équipes de design pour créer des interfaces utilisateur parfaites au pixel près."
+      },
+      {
+        "title": "Développeur Junior",
+        "company": "Startup Inc",
+        "period": "2020 - 2021",
+        "description": "J'ai construit et maintenu des applications web, appris les pratiques de développement modernes et contribué aux projets d'équipe."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences et Technologies",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils et Autres"
+    }
+  },
+  "projects": {
+    "title": "Projets en Vedette",
+    "list": [
+      {
+        "title": "Plateforme E-Commerce",
+        "description": "Une solution e-commerce full-stack avec authentification utilisateur, intégration de paiement et tableau de bord administrateur."
+      },
+      {
+        "title": "App de Gestion de Tâches",
+        "description": "Une application collaborative de gestion de tâches avec mises à jour en temps réel et fonctionnalités de collaboration d'équipe."
+      },
+      {
+        "title": "Tableau de Bord Météo",
+        "description": "Une application météo responsive avec prévisions basées sur la localisation et graphiques interactifs."
+      },
+      {
+        "title": "Site Web Portfolio",
+        "description": "Un site web portfolio moderne et responsive présentant projets et compétences avec des animations fluides."
+      }
+    ],
+    "buttons": {
+      "demo": "Démo en Direct",
+      "github": "GitHub"
+    },
+    "imageAlt": "Image du Projet"
+  },
+  "contact": {
+    "title": "Entrer en Contact",
+    "subtitle": "Travaillons ensemble !",
+    "description": "Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Que vous ayez une question ou que vous vouliez simplement dire bonjour, n'hésitez pas à me contacter !",
+    "details": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation"
+    },
+    "form": {
+      "name": "Votre Nom",
+      "email": "Votre Email",
+      "message": "Votre Message",
+      "send": "Envoyer le Message",
+      "success": "Merci pour votre message ! Je vous répondrai bientôt."
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "twitter": "Twitter"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  },
+  "language": {
+    "selector": "Langue",
+    "spanish": "Espagnol",
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "theme": {
+    "switchToDark": "Passer en mode sombre",
+    "switchToLight": "Passer en mode clair"
+  }
+}
