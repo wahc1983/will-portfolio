@@ -1,40 +1,42 @@
-/* Variables CSS para temas */
+/* Variables CSS para temas - Estilo Tokyo */
 :root.light-theme {
-  --primary-color: #007bff;
-  --primary-hover: #0056b3;
+  --primary-color: #333333;
+  --primary-hover: #000000;
   --secondary-color: #6c757d;
-  --background-color: #ffffff;
-  --background-alt: #f8f9fa;
-  --text-color: #333333;
-  --text-secondary: #6c757d;
-  --text-muted: #495057;
-  --border-color: #e9ecef;
-  --border-hover: #dee2e6;
+  --background-color: #f8f9fa;
+  --background-alt: #ffffff;
+  --text-color: #111111;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+  --border-color: #eaeaea;
+  --border-hover: #cccccc;
   --card-bg: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --shadow-hover: rgba(0, 0, 0, 0.15);
-  --header-bg: rgba(255, 255, 255, 0.95);
-  --footer-bg: #2c3e50;
-  --footer-text: #bdc3c7;
+  --shadow: rgba(0, 0, 0, 0.03);
+  --shadow-hover: rgba(0, 0, 0, 0.08);
+  --header-bg: rgba(255, 255, 255, 0.98);
+  --footer-bg: #f8f9fa;
+  --footer-text: #666666;
+  --sidebar-width: 300px;
 }
 
 :root.dark-theme {
-  --primary-color: #4dabf7;
-  --primary-hover: #339af0;
+  --primary-color: #ffffff;
+  --primary-hover: #dddddd;
   --secondary-color: #adb5bd;
-  --background-color: #121212;
-  --background-alt: #1e1e1e;
+  --background-color: #111111;
+  --background-alt: #1a1a1a;
   --text-color: #ffffff;
-  --text-secondary: #adb5bd;
-  --text-muted: #868e96;
-  --border-color: #343a40;
-  --border-hover: #495057;
-  --card-bg: #1e1e1e;
+  --text-secondary: #aaaaaa;
+  --text-muted: #777777;
+  --border-color: #2a2a2a;
+  --border-hover: #444444;
+  --card-bg: #1c1c1c;
   --shadow: rgba(0, 0, 0, 0.3);
-  --shadow-hover: rgba(0, 0, 0, 0.4);
-  --header-bg: rgba(18, 18, 18, 0.95);
-  --footer-bg: #0d1117;
-  --footer-text: #8b949e;
+  --shadow-hover: rgba(0, 0, 0, 0.5);
+  --header-bg: #000000;
+  --footer-bg: #000000;
+  --footer-text: #777777;
+  --sidebar-width: 300px;
 }
 
 * {
@@ -55,6 +57,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+@media (min-width: 769px) {
+  .App {
+    padding-right: var(--sidebar-width);
+  }
 }
 
 .btn {

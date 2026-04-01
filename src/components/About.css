@@ -52,20 +52,24 @@
 .about-image {
   display: flex;
   justify-content: center;
+  order: -1;
 }
 
-.image-placeholder {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
+.tokyo-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite;
+  box-shadow: 0 0 0 12px rgba(128, 128, 128, 0.15), 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
 }
 
 @media (max-width: 768px) {
@@ -87,8 +91,7 @@
     justify-content: center;
   }
 
-  .image-placeholder {
-    width: 250px;
-    height: 250px;
+  .tokyo-image {
+    max-width: 300px;
   }
 }

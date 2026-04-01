@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import './About.css'
+import profileImage from '../assets/profile.png'
 
 const About = () => {
   const { t } = useTranslation()
@@ -30,9 +31,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-image">
-            <div className="image-placeholder">
-              <span>{t('about.imageAlt')}</span>
-            </div>
+            <img src={profileImage} alt={t('about.imageAlt')} className="tokyo-image" />
           </div>
         </div>
       </div>
