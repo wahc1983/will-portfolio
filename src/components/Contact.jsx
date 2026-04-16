@@ -38,10 +38,7 @@ const Contact = () => {
                 <strong>{t('contact.details.email')}:</strong>
                 <span>Williamhuertas1015@gmail.com</span>
               </div>
-              <div className="contact-item">
-                <strong>{t('contact.details.phone')}:</strong>
-                <span>+57 317 3799070</span>
-              </div>
+
               <div className="contact-item">
                 <strong>{t('contact.details.location')}:</strong>
                 <span>Bogotá, Colombia</span>
