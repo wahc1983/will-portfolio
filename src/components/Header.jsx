@@ -24,6 +24,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
+          <img src="/favicon.svg" alt="Logo" className="header-logo-icon" />
           <h2>{t('header.title')}</h2>
         </div>
         

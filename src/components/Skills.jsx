@@ -9,31 +9,31 @@ const Skills = () => {
     {
       title: t('skills.categories.frontend'),
       skills: [
-        { name: "React", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "TypeScript", level: 80 },
-        { name: "CSS3", level: 85 },
-        { name: "HTML5", level: 90 }
+        { name: "Angular (v11-21)", level: 95 },
+        { name: "Microfrontends (Single-SPA, Module Fed)", level: 90 },
+        { name: "Ionic & Capacitor", level: 85 },
+        { name: "React & Redux", level: 85 },
+        { name: "TypeScript", level: 90 }
       ]
     },
     {
       title: t('skills.categories.backend'),
       skills: [
+        { name: "Ruby on Rails", level: 90 },
         { name: "Node.js", level: 85 },
-        { name: "Express", level: 80 },
-        { name: "Python", level: 75 },
-        { name: "MongoDB", level: 80 },
-        { name: "PostgreSQL", level: 75 }
+        { name: "RESTful APIs", level: 90 },
+        { name: "SQL (PostgreSQL/MySQL)", level: 85 },
+        { name: "Python", level: 75 }
       ]
     },
     {
       title: t('skills.categories.tools'),
       skills: [
-        { name: "Git", level: 85 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 75 },
-        { name: "Figma", level: 70 },
-        { name: "Webpack", level: 65 }
+        { name: "Docker", level: 85 },
+        { name: "Jenkins (CI/CD)", level: 85 },
+        { name: "SonarQube & Fortify", level: 80 },
+        { name: "AI Agents (Copilot, Kiro, Antigravity)", level: 95 },
+        { name: "Spec-Driven / Vibe Coding", level: 90 }
       ]
     }
   ]

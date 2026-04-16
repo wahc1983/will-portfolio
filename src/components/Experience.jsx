@@ -11,21 +11,21 @@ const Experience = () => {
       company: t('experience.jobs.0.company'),
       period: t('experience.jobs.0.period'),
       description: t('experience.jobs.0.description'),
-      technologies: ["React", "Node.js", "MongoDB", "AWS"]
+      technologies: ["Angular v21", "Ionic", "Capacitor", "Module Fed.", "Docker"]
     },
     {
       title: t('experience.jobs.1.title'),
       company: t('experience.jobs.1.company'),
       period: t('experience.jobs.1.period'),
       description: t('experience.jobs.1.description'),
-      technologies: ["React", "JavaScript", "CSS3", "HTML5"]
+      technologies: ["Angular (11-13)", "Microfrontends", "SonarQube", "Fortify"]
     },
     {
       title: t('experience.jobs.2.title'),
       company: t('experience.jobs.2.company'),
       period: t('experience.jobs.2.period'),
       description: t('experience.jobs.2.description'),
-      technologies: ["JavaScript", "React", "Express", "PostgreSQL"]
+      technologies: ["Ruby on Rails", "Vanilla JS", "MariaDB", "MySQL", "AWS"]
     }
   ]
 

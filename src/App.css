@@ -1,5 +1,6 @@
 /* Variables CSS para temas - Estilo Tokyo */
 :root.light-theme {
+  --btn-text: #ffffff;
   --primary-color: #333333;
   --primary-hover: #000000;
   --secondary-color: #6c757d;
@@ -20,6 +21,7 @@
 }
 
 :root.dark-theme {
+  --btn-text: #000000;
   --primary-color: #ffffff;
   --primary-hover: #dddddd;
   --secondary-color: #adb5bd;
@@ -84,11 +86,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--btn-text);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
+  color: var(--btn-text);
   transform: translateY(-2px);
 }
 
@@ -100,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secondary:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--btn-text);
 }
 
 .tech-tag {

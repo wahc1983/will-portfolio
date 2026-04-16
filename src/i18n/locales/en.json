@@ -11,36 +11,36 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Full Stack Developer",
-    "description1": "I'm a passionate full stack developer with experience in modern web technologies. I love creating efficient, scalable, and user-friendly applications that solve real-world problems.",
-    "description2": "With a strong foundation in both frontend and backend development, I enjoy working with React, Node.js, and various databases to build complete web solutions.",
+    "subtitle": "Senior Full Stack Developer",
+    "description1": "Senior Full Stack Developer with over 12 years of experience designing and implementing scalable and efficient web solutions. Specialized in microfrontend architectures using Angular and backend development with Ruby on Rails and Node.js.",
+    "description2": "I stand out as a pioneer in AI-augmented hybrid workflows (Vibe Coding, Spec-Driven Development), employing advanced autonomous agents like Copilot, Kiro, and Antigravity to accelerate value delivery and elevate quality standards.",
     "stats": {
-      "experience": "Years Experience",
-      "projects": "Projects Completed",
-      "technologies": "Technologies"
+      "experience": "12+ Years Experience",
+      "projects": "Completed Projects",
+      "technologies": "Technologies Mastered"
     },
-    "imageAlt": "Your Photo"
+    "imageAlt": "William Huertas Photo"
   },
   "experience": {
     "title": "Work Experience",
     "jobs": [
       {
-        "title": "Senior Full Stack Developer",
-        "company": "Tech Company",
+        "title": "Senior Software Developer",
+        "company": "ADL Digital Lab",
         "period": "2022 - Present",
-        "description": "Led development of multiple web applications using React, Node.js, and MongoDB. Mentored junior developers and implemented best practices."
+        "description": "Development of hybrid applications (Ionic, Capacitor) for the financial sector using Angular (up to v21), Redux, and TypeScript. Led migration to Microfrontends (Single-SPA, Module Federation, Web Components), local automation with Docker, and QA with SonarQube."
       },
       {
-        "title": "Frontend Developer",
-        "company": "Digital Agency",
+        "title": "Semi-Senior Software Developer",
+        "company": "Scotiabank Colpatria",
         "period": "2021 - 2022",
-        "description": "Developed responsive web applications and collaborated with design teams to create pixel-perfect user interfaces."
+        "description": "Built critical transactional modules using Angular (11-13). Contributed to highly scalable architectures and integrated security tools like SonarQube, Fortify, and Blackduck."
       },
       {
-        "title": "Junior Developer",
-        "company": "Startup Inc",
-        "period": "2020 - 2021",
-        "description": "Built and maintained web applications, learned modern development practices, and contributed to team projects."
+        "title": "Web Developer",
+        "company": "Worldwide Systems Services (WSS)",
+        "period": "2013 - 2021",
+        "description": "Comprehensive development of Backend and Frontend modules (Ruby on Rails, JavaScript) for the Incwo.com CRM. Integrated AWS cloud services and Google APIs, along with E-commerce optimizations."
       }
     ]
   },
@@ -49,27 +49,27 @@
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "tools": "Tools & Others"
+      "tools": "DevOps & AI"
     }
   },
   "projects": {
     "title": "Featured Projects",
     "list": [
       {
-        "title": "E-Commerce Platform",
-        "description": "A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard."
+        "title": "CRM Incwo Integration",
+        "description": "Developed custom Backend/Frontend modules utilizing Ruby on Rails and JS tools."
       },
       {
-        "title": "Task Management App",
-        "description": "A collaborative task management application with real-time updates and team collaboration features."
+        "title": "Banking Platform",
+        "description": "Secure enterprise applications and transactional modules under an Angular Microfrontends architecture."
       },
       {
-        "title": "Weather Dashboard",
-        "description": "A responsive weather application with location-based forecasts and interactive charts."
+        "title": "CI/CD Automation",
+        "description": "Created and maintained deployment workflows and quality tools using Docker, Jenkins, and SonarQube."
       },
       {
-        "title": "Portfolio Website",
-        "description": "A modern, responsive portfolio website showcasing projects and skills with smooth animations."
+        "title": "E-Commerce & Caching",
+        "description": "Connected platforms like Shopify/Magento and integrated search engines like Algolia."
       }
     ],
     "buttons": {
@@ -81,7 +81,7 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Let's work together!",
-    "description": "I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!",
+    "description": "I am always open to discussing new opportunities and exciting technical challenges. Feel free to message me!",
     "details": {
       "email": "Email",
       "phone": "Phone",
@@ -97,7 +97,7 @@
     "social": {
       "linkedin": "LinkedIn",
       "github": "GitHub",
-      "twitter": "Twitter"
+      "bitbucket": "Bitbucket"
     }
   },
   "footer": {

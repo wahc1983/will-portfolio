@@ -1,6 +1,6 @@
 .about {
-  margin-top: 80px;
-  padding: 100px 0;
+  margin-top: 0;
+  padding: 40px 0;
 }
 
 .about-content {
@@ -74,7 +74,8 @@
 
 @media (max-width: 768px) {
   .about {
-    padding: 80px 0;
+    margin-top: 130px;
+    padding: 30px 0;
   }
 
   .about-content {

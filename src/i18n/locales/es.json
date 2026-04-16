@@ -11,36 +11,36 @@
   },
   "about": {
     "title": "Acerca de Mí",
-    "subtitle": "Desarrollador Full Stack",
-    "description1": "Soy un desarrollador full stack apasionado con experiencia en tecnologías web modernas. Me encanta crear aplicaciones eficientes, escalables y fáciles de usar que resuelven problemas del mundo real.",
-    "description2": "Con una sólida base tanto en desarrollo frontend como backend, disfruto trabajando con React, Node.js y varias bases de datos para construir soluciones web completas.",
+    "subtitle": "Senior Full Stack Developer",
+    "description1": "Senior Full Stack Developer con más de 12 años de experiencia diseñando e implementando soluciones web escalables y eficientes. Especializado en arquitecturas de microfrontends usando Angular y desarrollo backend con Ruby on Rails y Node.js.",
+    "description2": "Destaco como pionero en desarrollo híbrido impulsado por IA (Vibe Coding, Spec-Driven Development), empleando agentes autónomos avanzados como Copilot, Kiro y Antigravity para acelerar la entrega de valor y elevar los estándares de calidad.",
     "stats": {
-      "experience": "Años de Experiencia",
+      "experience": "12+ Años de Experiencia",
       "projects": "Proyectos Completados",
-      "technologies": "Tecnologías"
+      "technologies": "Tecnologías Dominadas"
     },
-    "imageAlt": "Tu Foto"
+    "imageAlt": "Foto de William Huertas"
   },
   "experience": {
     "title": "Experiencia Laboral",
     "jobs": [
       {
-        "title": "Desarrollador Full Stack Senior",
-        "company": "Empresa Tecnológica",
+        "title": "Senior Software Developer",
+        "company": "ADL Digital Lab",
         "period": "2022 - Presente",
-        "description": "Lideré el desarrollo de múltiples aplicaciones web usando React, Node.js y MongoDB. Mentoricé desarrolladores junior e implementé mejores prácticas."
+        "description": "Desarrollo de aplicaciones híbridas (Ionic, Capacitor) para el sector financiero usando Angular (hasta v21), Redux y TypeScript. Migración a Microfrontends (Single-SPA, Module Federation, Web Components), automatización con Docker y calidad con SonarQube."
       },
       {
-        "title": "Desarrollador Frontend",
-        "company": "Agencia Digital",
+        "title": "Semi-Senior Software Developer",
+        "company": "Scotiabank Colpatria",
         "period": "2021 - 2022",
-        "description": "Desarrollé aplicaciones web responsivas y colaboré con equipos de diseño para crear interfaces de usuario pixel-perfect."
+        "description": "Construcción de módulos transaccionales críticos usando Angular (11-13). Contribución en arquitecturas altamente escalables e integración de herramientas de seguridad como SonarQube, Fortify y Blackduck."
       },
       {
-        "title": "Desarrollador Junior",
-        "company": "Startup Inc",
-        "period": "2020 - 2021",
-        "description": "Construí y mantuve aplicaciones web, aprendí prácticas de desarrollo modernas y contribuí a proyectos de equipo."
+        "title": "Web Developer",
+        "company": "Worldwide Systems Services (WSS)",
+        "period": "2013 - 2021",
+        "description": "Desarrollo integral de módulos Backend y Frontend (Ruby on Rails, JavaScript) para el CRM Incwo.com. Integración de servicios cloud AWS y Google APIs, así como optimizaciones de E-commerce."
       }
     ]
   },
@@ -49,31 +49,31 @@
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "tools": "Herramientas y Otros"
+      "tools": "DevOps e IA"
     }
   },
   "projects": {
     "title": "Proyectos Destacados",
     "list": [
       {
-        "title": "Plataforma E-Commerce",
-        "description": "Una solución e-commerce full-stack con autenticación de usuarios, integración de pagos y panel de administración."
+        "title": "Integración CRM Incwo",
+        "description": "Desarrollo de módulos personalizados Backend/Frontend utilizando Ruby on Rails y herramientas JS."
       },
       {
-        "title": "App de Gestión de Tareas",
-        "description": "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de colaboración en equipo."
+        "title": "Plataforma Bancaria",
+        "description": "Módulos transaccionales y aplicaciones empresariales seguras bajo arquitectura de Microfrontends en Angular."
       },
       {
-        "title": "Dashboard del Clima",
-        "description": "Una aplicación del clima responsiva con pronósticos basados en ubicación y gráficos interactivos."
+        "title": "Automatización CI/CD",
+        "description": "Creación y mantenimiento de flujos de despliegue y herramientas de calidad con Docker, Jenkins y SonarQube."
       },
       {
-        "title": "Sitio Web Portfolio",
-        "description": "Un sitio web portfolio moderno y responsivo que muestra proyectos y habilidades con animaciones suaves."
+        "title": "E-Commerce & Caching",
+        "description": "Conexión de plataformas como Shopify/Magento e integración de motores de búsqueda como Algolia."
       }
     ],
     "buttons": {
-      "demo": "Demo en Vivo",
+      "demo": "Ver Demo",
       "github": "GitHub"
     },
     "imageAlt": "Imagen del Proyecto"
@@ -81,9 +81,9 @@
   "contact": {
     "title": "Ponte en Contacto",
     "subtitle": "¡Trabajemos juntos!",
-    "description": "Siempre estoy interesado en nuevas oportunidades y proyectos emocionantes. Ya sea que tengas una pregunta o simplemente quieras saludar, ¡no dudes en contactarme!",
+    "description": "Siempre estoy abierto a discutir nuevas oportunidades y emocionantes desafíos técnicos. ¡No dudes en escribirme!",
     "details": {
-      "email": "Correo",
+      "email": "Email",
       "phone": "Teléfono",
       "location": "Ubicación"
     },
@@ -97,7 +97,7 @@
     "social": {
       "linkedin": "LinkedIn",
       "github": "GitHub",
-      "twitter": "Twitter"
+      "bitbucket": "Bitbucket"
     }
   },
   "footer": {

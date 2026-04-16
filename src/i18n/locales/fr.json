@@ -11,36 +11,36 @@
   },
   "about": {
     "title": "À Propos de Moi",
-    "subtitle": "Développeur Full Stack",
-    "description1": "Je suis un développeur full stack passionné avec de l'expérience dans les technologies web modernes. J'adore créer des applications efficaces, évolutives et conviviales qui résolvent des problèmes du monde réel.",
-    "description2": "Avec une solide base en développement frontend et backend, j'aime travailler avec React, Node.js et diverses bases de données pour construire des solutions web complètes.",
+    "subtitle": "Développeur Full Stack Senior",
+    "description1": "Développeur Full Stack Senior avec plus de 12 ans d'expérience dans la conception et l'implémentation de solutions web évolutives et efficaces. Spécialisé dans les architectures microfontend utilisant Angular et le développement backend avec Ruby on Rails et Node.js.",
+    "description2": "Je me distingue comme pionnier dans les flux de travail hybrides accélérés par l'IA (Vibe Coding, Spec-Driven Development), utilisant des agents autonomes avancés tels que Copilot, Kiro et Antigravity pour accélérer la création de valeur et élever les standards de qualité.",
     "stats": {
-      "experience": "Années d'Expérience",
+      "experience": "12+ Années d'Expérience",
       "projects": "Projets Terminés",
-      "technologies": "Technologies"
+      "technologies": "Technologies Maîtrisées"
     },
-    "imageAlt": "Votre Photo"
+    "imageAlt": "Photo de William Huertas"
   },
   "experience": {
     "title": "Expérience Professionnelle",
     "jobs": [
       {
-        "title": "Développeur Full Stack Senior",
-        "company": "Entreprise Tech",
+        "title": "Développeur Logiciel Senior",
+        "company": "ADL Digital Lab",
         "period": "2022 - Présent",
-        "description": "J'ai dirigé le développement de plusieurs applications web utilisant React, Node.js et MongoDB. J'ai encadré des développeurs juniors et implémenté les meilleures pratiques."
+        "description": "Développement d'applications hybrides (Ionic, Capacitor) pour le secteur financier avec Angular (jusqu'à v21), Redux et TypeScript. Migration vers des Microfrontends (Single-SPA, Module Federation, Web Components), automatisation avec Docker et AQ avec SonarQube."
       },
       {
-        "title": "Développeur Frontend",
-        "company": "Agence Digitale",
+        "title": "Développeur Logiciel Semi-Senior",
+        "company": "Scotiabank Colpatria",
         "period": "2021 - 2022",
-        "description": "J'ai développé des applications web responsives et collaboré avec les équipes de design pour créer des interfaces utilisateur parfaites au pixel près."
+        "description": "Construction de modules transactionnels critiques avec Angular (11-13). Contribution à des architectures hautement évolutives et intégration d'outils de sécurité comme SonarQube, Fortify et Blackduck."
       },
       {
-        "title": "Développeur Junior",
-        "company": "Startup Inc",
-        "period": "2020 - 2021",
-        "description": "J'ai construit et maintenu des applications web, appris les pratiques de développement modernes et contribué aux projets d'équipe."
+        "title": "Développeur Web",
+        "company": "Worldwide Systems Services (WSS)",
+        "period": "2013 - 2021",
+        "description": "Développement complet de modules Backend et Frontend (Ruby on Rails, JavaScript) pour le CRM Incwo.com. Intégration de services cloud AWS et des API Google, ainsi que des optimisations e-commerce."
       }
     ]
   },
@@ -49,31 +49,31 @@
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
-      "tools": "Outils et Autres"
+      "tools": "DevOps & IA"
     }
   },
   "projects": {
     "title": "Projets en Vedette",
     "list": [
       {
-        "title": "Plateforme E-Commerce",
-        "description": "Une solution e-commerce full-stack avec authentification utilisateur, intégration de paiement et tableau de bord administrateur."
+        "title": "Intégration CRM Incwo",
+        "description": "Développement de modules sur mesure Backend/Frontend à l'aide de Ruby on Rails et des outils JS."
       },
       {
-        "title": "App de Gestion de Tâches",
-        "description": "Une application collaborative de gestion de tâches avec mises à jour en temps réel et fonctionnalités de collaboration d'équipe."
+        "title": "Plateforme Bancaire",
+        "description": "Applications d'entreprise sécurisées et modules transactionnels sous une architecture de Microfrontends Angular."
       },
       {
-        "title": "Tableau de Bord Météo",
-        "description": "Une application météo responsive avec prévisions basées sur la localisation et graphiques interactifs."
+        "title": "Automatisation CI/CD",
+        "description": "Création et maintenance de flux de déploiement et d'outils de qualité utilisant Docker, Jenkins et SonarQube."
       },
       {
-        "title": "Site Web Portfolio",
-        "description": "Un site web portfolio moderne et responsive présentant projets et compétences avec des animations fluides."
+        "title": "E-Commerce & Caching",
+        "description": "Connexion à des plateformes comme Shopify/Magento et intégration de moteurs de recherche comme Algolia."
       }
     ],
     "buttons": {
-      "demo": "Démo en Direct",
+      "demo": "Voir Démo",
       "github": "GitHub"
     },
     "imageAlt": "Image du Projet"
@@ -81,7 +81,7 @@
   "contact": {
     "title": "Entrer en Contact",
     "subtitle": "Travaillons ensemble !",
-    "description": "Je suis toujours intéressé par de nouvelles opportunités et des projets passionnants. Que vous ayez une question ou que vous vouliez simplement dire bonjour, n'hésitez pas à me contacter !",
+    "description": "Je suis toujours ouvert à discuter de nouvelles opportunités et de défis techniques passionnants. N'hésitez pas à m'envoyer un message !",
     "details": {
       "email": "Email",
       "phone": "Téléphone",
@@ -97,7 +97,7 @@
     "social": {
       "linkedin": "LinkedIn",
       "github": "GitHub",
-      "twitter": "Twitter"
+      "bitbucket": "Bitbucket"
     }
   },
   "footer": {

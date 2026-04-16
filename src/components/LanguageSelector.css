@@ -95,6 +95,9 @@
   
   .language-dropdown {
     min-width: 130px;
+    bottom: auto;
+    top: 100%;
+    margin-top: 0.5rem;
   }
   
   .language-option {

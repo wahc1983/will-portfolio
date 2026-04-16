@@ -10,33 +10,29 @@ const Projects = () => {
       title: t('projects.list.0.title'),
       description: t('projects.list.0.description'),
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#"
+      technologies: ["Ruby on Rails", "JavaScript", "AWS"],
+      githubUrl: "https://github.com/wahc1983"
     },
     {
       title: t('projects.list.1.title'),
       description: t('projects.list.1.description'),
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#"
+      technologies: ["Angular", "Microfrontends", "TypeScript"],
+      githubUrl: "https://github.com/wahc1983"
     },
     {
       title: t('projects.list.2.title'),
       description: t('projects.list.2.description'),
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Chart.js", "Weather API", "CSS3"],
-      liveUrl: "#",
-      githubUrl: "#"
+      technologies: ["Docker", "Jenkins", "SonarQube"],
+      githubUrl: "https://github.com/wahc1983"
     },
     {
       title: t('projects.list.3.title'),
       description: t('projects.list.3.description'),
       image: "/api/placeholder/400/250",
-      technologies: ["React", "CSS3", "Framer Motion", "Vite"],
-      liveUrl: "#",
-      githubUrl: "#"
+      technologies: ["Shopify", "Magento", "Algolia"],
+      githubUrl: "https://github.com/wahc1983"
     }
   ]
 
@@ -48,9 +44,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div key={index} className="project-card">
               <div className="project-image">
-                <div className="image-placeholder">
-                  <span>{t('projects.imageAlt')}</span>
-                </div>
+                <div className={`image-placeholder gradient-${index % 4}`}></div>
               </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
@@ -61,8 +55,7 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.liveUrl} className="btn btn-primary">{t('projects.buttons.demo')}</a>
-                  <a href={project.githubUrl} className="btn btn-secondary">{t('projects.buttons.github')}</a>
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">{t('projects.buttons.github')}</a>
                 </div>
               </div>
             </div>

@@ -36,57 +36,39 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <strong>{t('contact.details.email')}:</strong>
-                <span>your.email@example.com</span>
+                <span>Williamhuertas1015@gmail.com</span>
               </div>
               <div className="contact-item">
                 <strong>{t('contact.details.phone')}:</strong>
-                <span>+1 (555) 123-4567</span>
+                <span>+57 317 3799070</span>
               </div>
               <div className="contact-item">
                 <strong>{t('contact.details.location')}:</strong>
-                <span>Your City, Country</span>
+                <span>Bogotá, Colombia</span>
               </div>
             </div>
             <div className="social-links">
-              <a href="#" className="social-link">{t('contact.social.linkedin')}</a>
-              <a href="#" className="social-link">{t('contact.social.github')}</a>
-              <a href="#" className="social-link">{t('contact.social.twitter')}</a>
+              <a href="https://linkedin.com/in/william-huertas-05928418/" target="_blank" rel="noopener noreferrer" className="social-link">{t('contact.social.linkedin')}</a>
+              <a href="https://github.com/wahc1983" target="_blank" rel="noopener noreferrer" className="social-link">{t('contact.social.github')}</a>
+              <a href="https://bitbucket.org/wahc1983" target="_blank" rel="noopener noreferrer" className="social-link">{t('contact.social.bitbucket')}</a>
             </div>
           </div>
           
+          {/* 
+          Formulario oculto temporalmente
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder={t('contact.form.name')}
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
+              <input type="text" name="name" placeholder={t('contact.form.name')} value={formData.name} onChange={handleChange} required />
             </div>
             <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder={t('contact.form.email')}
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <input type="email" name="email" placeholder={t('contact.form.email')} value={formData.email} onChange={handleChange} required />
             </div>
             <div className="form-group">
-              <textarea
-                name="message"
-                placeholder={t('contact.form.message')}
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
+              <textarea name="message" placeholder={t('contact.form.message')} rows="5" value={formData.message} onChange={handleChange} required ></textarea>
             </div>
             <button type="submit" className="btn btn-primary">{t('contact.form.send')}</button>
           </form>
+          */}
         </div>
       </div>
     </section>
