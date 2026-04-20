@@ -36,7 +36,9 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <strong>{t('contact.details.email')}:</strong>
-                <span>Williamhuertas1015@gmail.com</span>
+                <a href={`mailto:${['Williamhuertas1015', 'gmail.com'].join('@')}`} className="social-link" style={{textTransform: 'none'}}>
+                  {['Williamhuertas1015', 'gmail.com'].join('@')}
+                </a>
               </div>
 
               <div className="contact-item">
