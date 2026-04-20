@@ -26,16 +26,57 @@
 
 .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .header-logo-icon {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
+  min-width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  line-height: 1;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  padding: 0 4px;
+}
+
+.logo-suffix {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fadeOutSuffix 1.5s cubic-bezier(0.8, 0, 0.2, 1) 1s forwards;
+}
+
+@keyframes fadeOutSuffix {
+  0% {
+    max-width: 60px;
+    opacity: 1;
+  }
+  100% {
+    max-width: 0;
+    opacity: 0;
+  }
+}
+
+:root.light-theme .header-logo-icon {
+  background-color: #2563EB;
+  color: #ffffff;
+}
+
+.logo:hover .header-logo-icon {
+  transform: rotate(-10deg) scale(1.05);
 }
 
 .logo h2 {
@@ -93,6 +134,12 @@
   width: 30px;
   height: 30px;
   justify-content: space-around;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-toggle:focus {
+  outline: none;
 }
 
 .menu-toggle span {
@@ -101,6 +148,24 @@
   width: 100%;
   background-color: var(--text-color);
   transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+:root.light-theme .menu-toggle span {
+  background-color: #2563EB;
+}
+
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
@@ -123,6 +188,7 @@
 
   .logo {
     width: 100%;
+    flex-direction: row;
     margin-bottom: 0;
     gap: 0.5rem;
     padding-bottom: 1rem;
@@ -130,8 +196,8 @@
   }
 
   .header-logo-icon {
-    width: 32px;
     height: 32px;
+    min-width: 32px;
   }
 
   .logo h2 {

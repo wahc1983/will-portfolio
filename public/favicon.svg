@@ -1,4 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
-  <rect width="120" height="120" rx="30" fill="#2563EB"/>
-  <path d="M30 35 L45 80 L60 50 L75 80 L90 35" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@900&amp;display=swap');
+      .text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 900;
+        font-size: 80px;
+        fill: #111111;
+      }
+    </style>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="#ffffff"/>
+  <text x="50%" y="52%" dominant-baseline="central" text-anchor="middle" class="text">W</text>
 </svg>

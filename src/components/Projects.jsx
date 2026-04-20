@@ -10,8 +10,7 @@ const Projects = () => {
       title: t('projects.list.0.title'),
       description: t('projects.list.0.description'),
       image: "/api/placeholder/400/250",
-      technologies: ["Ruby on Rails", "JavaScript", "AWS"],
-      githubUrl: "https://github.com/wahc1983"
+      technologies: ["Ruby on Rails", "JavaScript", "AWS"]
     },
     {
       title: t('projects.list.1.title'),
@@ -55,7 +54,9 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">{t('projects.buttons.github')}</a>
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">{t('projects.buttons.github')}</a>
+                  )}
                 </div>
               </div>
             </div>
