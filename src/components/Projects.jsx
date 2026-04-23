@@ -17,21 +17,28 @@ const Projects = () => {
       description: t('projects.list.1.description'),
       image: "/api/placeholder/400/250",
       technologies: ["Angular", "Microfrontends", "TypeScript"],
-      githubUrl: "https://github.com/wahc1983"
+      repoUrl: "https://bitbucket.org/wahc1983/workspace/projects/DIG"
     },
     {
       title: t('projects.list.2.title'),
       description: t('projects.list.2.description'),
       image: "/api/placeholder/400/250",
-      technologies: ["Docker", "Jenkins", "SonarQube"],
-      githubUrl: "https://github.com/wahc1983"
+      technologies: ["Astro", "TypeScript", "JavaScript"],
+      repoUrl: "https://github.com/wahc1983/asynchronous-javascript-academic"
     },
     {
       title: t('projects.list.3.title'),
       description: t('projects.list.3.description'),
       image: "/api/placeholder/400/250",
-      technologies: ["Shopify", "Magento", "Algolia"],
-      githubUrl: "https://github.com/wahc1983"
+      technologies: ["Angular", "TypeScript", "PokéAPI"],
+      repoUrl: "https://github.com/wahc1983/pokeAppAng"
+    },
+    {
+      title: t('projects.list.4.title'),
+      description: t('projects.list.4.description'),
+      image: "/api/placeholder/400/250",
+      technologies: ["Node.js", "MCP SDK", "JavaScript"],
+      repoUrl: "https://github.com/wahc1983/mcp-will"
     }
   ]
 
@@ -54,8 +61,10 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  {project.githubUrl && (
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">{t('projects.buttons.github')}</a>
+                  {project.repoUrl && (
+                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+                      {project.repoUrl.includes('bitbucket') ? t('contact.social.bitbucket') : t('projects.buttons.github')}
+                    </a>
                   )}
                 </div>
               </div>

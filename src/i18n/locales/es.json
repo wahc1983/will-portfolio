@@ -60,16 +60,20 @@
         "description": "Desarrollo de módulos personalizados Backend/Frontend utilizando Ruby on Rails y herramientas JS."
       },
       {
-        "title": "Plataforma Bancaria",
-        "description": "Módulos transaccionales y aplicaciones empresariales seguras bajo arquitectura de Microfrontends en Angular."
+        "title": "Plataforma Bancaria DigitalBC",
+        "description": "Ecosistema bancario digital corporativo estructurado en Microfrontends con Angular. Incluye el diseño e implementación de módulos transaccionales seguros, escalables y de alto rendimiento."
       },
       {
-        "title": "Automatización CI/CD",
-        "description": "Creación y mantenimiento de flujos de despliegue y herramientas de calidad con Docker, Jenkins y SonarQube."
+        "title": "Visualizador Event Loop JS",
+        "description": "Presentación interactiva construida con Astro para aprender cómo funciona el Event Loop de JavaScript y Web Workers."
       },
       {
-        "title": "E-Commerce & Caching",
-        "description": "Conexión de plataformas como Shopify/Magento e integración de motores de búsqueda como Algolia."
+        "title": "Pokédex en Angular",
+        "description": "Aplicación web responsiva construida en Angular para buscar y mostrar información detallada de Pokémon."
+      },
+      {
+        "title": "Servidores MCP para Kiro",
+        "description": "Colección de servidores MCP (Model Context Protocol) personalizados para extender el asistente Kiro, incluyendo captura en tiempo real de logs del navegador."
       }
     ],
     "buttons": {

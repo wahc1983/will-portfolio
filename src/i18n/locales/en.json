@@ -60,16 +60,20 @@
         "description": "Developed custom Backend/Frontend modules utilizing Ruby on Rails and JS tools."
       },
       {
-        "title": "Banking Platform",
-        "description": "Secure enterprise applications and transactional modules under an Angular Microfrontends architecture."
+        "title": "DigitalBC Banking Platform",
+        "description": "Corporate digital banking ecosystem structured with Angular Microfrontends. Features the design and implementation of highly secure, scalable, and high-performance transactional modules."
       },
       {
-        "title": "CI/CD Automation",
-        "description": "Created and maintained deployment workflows and quality tools using Docker, Jenkins, and SonarQube."
+        "title": "JS Event Loop Visualizer",
+        "description": "Interactive visual presentation built with Astro to learn how the JavaScript Event Loop and Web Workers function."
       },
       {
-        "title": "E-Commerce & Caching",
-        "description": "Connected platforms like Shopify/Magento and integrated search engines like Algolia."
+        "title": "Angular Pokédex",
+        "description": "A responsive web application built in Angular to browse and display detailed Pokémon information using the PokéAPI."
+      },
+      {
+        "title": "Kiro MCP Servers",
+        "description": "Collection of custom Model Context Protocol (MCP) servers extending the Kiro AI assistant, including a real-time Browser Console Logger."
       }
     ],
     "buttons": {
