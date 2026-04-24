@@ -1,28 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* Variables CSS por defecto (tema claro) */
+/* Variables CSS por defecto (Tema Oscuro - Estilo NgRx) */
 :root {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  /* Variables de tema claro por defecto */
-  --primary-color: #007bff;
-  --primary-hover: #0056b3;
-  --secondary-color: #6c757d;
-  --background-color: #ffffff;
-  --background-alt: #f8f9fa;
-  --text-color: #333333;
-  --text-secondary: #6c757d;
-  --text-muted: #495057;
-  --border-color: #e9ecef;
-  --border-hover: #dee2e6;
-  --card-bg: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --shadow-hover: rgba(0, 0, 0, 0.15);
-  --header-bg: rgba(255, 255, 255, 0.95);
-  --footer-bg: #2c3e50;
-  --footer-text: #bdc3c7;
+  /* Colores de Fondo */
+  --background-color: #17111a;
+  --background-alt: #241b28;
+  --card-bg: #241b28;
+  --card-bg-hover: #2b1f31;
+  --header-bg: rgba(23, 17, 26, 0.85);
+  --footer-bg: #0d0a0f;
+  
+  /* Layout */
+  --sidebar-width: 270px;
+  
+  /* Acentos */
+  --primary-color: #fface6;
+  --primary-hover: #cf8fc5;
+  --secondary-color: #a91794;
+
+  /* Texto */
+  --text-color: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.87);
+  --text-muted: rgba(255, 255, 255, 0.56);
+  --footer-text: rgba(255, 255, 255, 0.54);
+
+  /* Bordes y Sombras */
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-hover: rgba(207, 143, 197, 0.54);
+  --shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14);
+  --shadow-hover: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,45 +41,43 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* Aplicar tema claro por defecto */
+/* Tema Claro (Estilo NgRx) */
 :root.light-theme {
-  --primary-color: #007bff;
-  --primary-hover: #0056b3;
-  --secondary-color: #6c757d;
-  --background-color: #ffffff;
-  --background-alt: #f8f9fa;
-  --text-color: #333333;
-  --text-secondary: #6c757d;
-  --text-muted: #495057;
-  --border-color: #e9ecef;
-  --border-hover: #dee2e6;
-  --card-bg: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.1);
-  --shadow-hover: rgba(0, 0, 0, 0.15);
-  --header-bg: rgba(255, 255, 255, 0.95);
-  --footer-bg: #2c3e50;
-  --footer-text: #bdc3c7;
+  /* Colores de Fondo */
+  --background-color: #f5f3f4;
+  --background-alt: #dcdadb;
+  --card-bg: #dcdadb;
+  --card-bg-hover: #cfccce;
+  --header-bg: rgba(245, 243, 244, 0.85);
+  --footer-bg: #e0dedf;
+  
+  /* Acentos */
+  --primary-color: #a91794;
+  --primary-hover: #850074;
+  --secondary-color: #cf8fc5;
+
+  /* Texto */
+  --text-color: #1f1a1d;
+  --text-secondary: rgba(0, 0, 0, 0.87);
+  --text-muted: rgba(0, 0, 0, 0.56);
+  --footer-text: rgba(0, 0, 0, 0.54);
+
+  /* Bordes y Sombras */
+  --border-color: #dbdbdb;
+  --border-hover: rgba(169, 23, 148, 0.54);
+  --shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0px 3px 3px -2px rgba(0, 0, 0, 0.15);
 }
 
-/* Variables para tema oscuro */
+/* Mantener compatibilidad con clases antiguas */
 :root.dark-theme {
-  --primary-color: #4dabf7;
-  --primary-hover: #339af0;
-  --secondary-color: #adb5bd;
-  --background-color: #121212;
-  --background-alt: #1e1e1e;
-  --text-color: #ffffff;
-  --text-secondary: #adb5bd;
-  --text-muted: #868e96;
-  --border-color: #343a40;
-  --border-hover: #495057;
-  --card-bg: #1e1e1e;
-  --shadow: rgba(0, 0, 0, 0.3);
-  --shadow-hover: rgba(0, 0, 0, 0.4);
-  --header-bg: rgba(18, 18, 18, 0.95);
-  --footer-bg: #0d1117;
-  --footer-text: #8b949e;
+  /* Si por algún motivo se usa dark-theme en lugar de omitir light-theme */
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oxanium', sans-serif;
+}
+
 
 * {
   margin: 0;

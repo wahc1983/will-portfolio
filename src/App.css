@@ -1,46 +1,3 @@
-/* Variables CSS para temas - Estilo Tokyo */
-:root.light-theme {
-  --btn-text: #ffffff;
-  --primary-color: #333333;
-  --primary-hover: #000000;
-  --secondary-color: #6c757d;
-  --background-color: #f8f9fa;
-  --background-alt: #ffffff;
-  --text-color: #111111;
-  --text-secondary: #555555;
-  --text-muted: #888888;
-  --border-color: #eaeaea;
-  --border-hover: #cccccc;
-  --card-bg: #ffffff;
-  --shadow: rgba(0, 0, 0, 0.03);
-  --shadow-hover: rgba(0, 0, 0, 0.08);
-  --header-bg: rgba(255, 255, 255, 0.98);
-  --footer-bg: #f8f9fa;
-  --footer-text: #666666;
-  --sidebar-width: 300px;
-}
-
-:root.dark-theme {
-  --btn-text: #000000;
-  --primary-color: #ffffff;
-  --primary-hover: #dddddd;
-  --secondary-color: #adb5bd;
-  --background-color: #111111;
-  --background-alt: #1a1a1a;
-  --text-color: #ffffff;
-  --text-secondary: #aaaaaa;
-  --text-muted: #777777;
-  --border-color: #2a2a2a;
-  --border-hover: #444444;
-  --card-bg: #1c1c1c;
-  --shadow: rgba(0, 0, 0, 0.3);
-  --shadow-hover: rgba(0, 0, 0, 0.5);
-  --header-bg: #000000;
-  --footer-bg: #000000;
-  --footer-text: #777777;
-  --sidebar-width: 300px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +5,7 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Roboto', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -56,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Oxanium', sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -76,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 12px 24px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
@@ -86,12 +43,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: var(--btn-text);
+  color: var(--background-color);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
-  color: var(--btn-text);
+  color: var(--text-color);
   transform: translateY(-2px);
 }
 
@@ -102,16 +59,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-color);
-  color: var(--btn-text);
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: var(--background-color);
 }
 
 .tech-tag {
   display: inline-block;
   background-color: var(--background-alt);
-  color: var(--text-muted);
+  color: var(--primary-color);
   padding: 4px 12px;
-  border-radius: 20px;
+  border-radius: 6px;
+  font-family: 'Space Mono', monospace;
   font-size: 0.875rem;
   margin: 2px;
   border: 1px solid var(--border-color);

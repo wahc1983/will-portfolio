@@ -21,7 +21,9 @@
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px var(--shadow-hover);
+  box-shadow: var(--shadow-hover);
+  background-color: var(--card-bg-hover);
+  border-color: var(--border-hover);
 }
 
 .project-image {
@@ -47,10 +49,10 @@
   100% { background-position: 0% 50%; }
 }
 
-.gradient-0 { background-image: linear-gradient(-45deg, #1a1b26, #7dcfff, #2ac3de); }
-.gradient-1 { background-image: linear-gradient(-45deg, #1a1b26, #bb9af7, #9d7cd8); }
-.gradient-2 { background-image: linear-gradient(-45deg, #1a1b26, #9ece6a, #73daca); }
-.gradient-3 { background-image: linear-gradient(-45deg, #1a1b26, #f7768e, #ff9e64); }
+.gradient-0 { background-image: linear-gradient(-45deg, #17111a, #cf8fc5, #a91794); }
+.gradient-1 { background-image: linear-gradient(-45deg, #241b28, #fface6, #850074); }
+.gradient-2 { background-image: linear-gradient(-45deg, #17111a, #a91794, #cf8fc5); }
+.gradient-3 { background-image: linear-gradient(-45deg, #241b28, #cf8fc5, #fface6); }
 
 .project-content {
   padding: 2rem;

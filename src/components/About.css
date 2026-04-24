@@ -63,7 +63,7 @@
   object-fit: cover;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: morph 8s ease-in-out infinite;
-  box-shadow: 0 0 0 12px rgba(128, 128, 128, 0.15), 0 15px 35px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 12px var(--border-color), 0 15px 35px var(--shadow-hover);
 }
 
 @keyframes morph {

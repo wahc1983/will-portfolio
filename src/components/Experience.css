@@ -50,16 +50,19 @@
 .timeline-content {
   background-color: var(--card-bg);
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px var(--shadow);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
   width: calc(50% - 2rem);
   position: relative;
   transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .timeline-content:hover {
-  box-shadow: 0 8px 25px var(--shadow-hover);
+  box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
+  background-color: var(--card-bg-hover);
+  border-color: var(--border-hover);
 }
 
 .timeline-item:nth-child(odd) .timeline-content {

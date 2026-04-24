@@ -39,9 +39,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
   color: var(--background-color);
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Oxanium', sans-serif;
   font-weight: 900;
   font-size: 1.4rem;
   border-radius: 8px;
@@ -68,11 +68,6 @@
     max-width: 0;
     opacity: 0;
   }
-}
-
-:root.light-theme .header-logo-icon {
-  background-color: #2563EB;
-  color: #ffffff;
 }
 
 .logo:hover .header-logo-icon {
@@ -152,7 +147,7 @@
 }
 
 :root.light-theme .menu-toggle span {
-  background-color: #2563EB;
+  background-color: var(--primary-color);
 }
 
 .menu-toggle.open span:nth-child(1) {
