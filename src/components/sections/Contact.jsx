@@ -1,16 +1,16 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { useTheme } from '../hooks/useTheme'
-import SocialLinks from './SocialLinks'
-import { EmailIcon, MapPinIcon } from './SocialIcons'
-import contactImageLight from '../assets/illustrations/contact-william-light.webp'
-import contactImageDark from '../assets/illustrations/contact-william-dark.webp'
+import { useTheme } from '../../hooks/useTheme'
+import SocialLinks from '../ui/SocialLinks'
+import { EmailIcon, MapPinIcon } from '../ui/SocialIcons'
+import { CONTACT_EMAIL, CONTACT_LOCATION } from '../../constants/contact'
+import contactImageLight from '../../assets/illustrations/contact-william-light.webp'
+import contactImageDark from '../../assets/illustrations/contact-william-dark.webp'
 import './Contact.css'
 
 const Contact = () => {
   const { t } = useTranslation()
   const { isDarkMode } = useTheme()
-  const email = ['Williamhuertas1015', 'gmail.com'].join('@')
   const contactImage = isDarkMode ? contactImageDark : contactImageLight
 
   return (
@@ -37,7 +37,7 @@ const Contact = () => {
                   </span>
                   <div>
                     <span className="contact-label">{t('contact.details.email')}</span>
-                    <a href={`mailto:${email}`} className="contact-value">{email}</a>
+                    <a href={`mailto:${CONTACT_EMAIL}`} className="contact-value">{CONTACT_EMAIL}</a>
                   </div>
                 </li>
                 <li>
@@ -46,7 +46,7 @@ const Contact = () => {
                   </span>
                   <div>
                     <span className="contact-label">{t('contact.details.location')}</span>
-                    <span className="contact-value">Bogotá, Colombia</span>
+                    <span className="contact-value">{CONTACT_LOCATION}</span>
                   </div>
                 </li>
               </ul>
@@ -55,7 +55,7 @@ const Contact = () => {
             <div className="glass-card contact-cta-card">
               <h3>{t('contact.cta.title')}</h3>
               <p>{t('contact.description')}</p>
-              <a href={`mailto:${email}`} className="btn btn-primary contact-email-btn">
+              <a href={`mailto:${CONTACT_EMAIL}`} className="btn btn-primary contact-email-btn">
                 {t('contact.cta.button')} →
               </a>
               <SocialLinks showEmail={false} />

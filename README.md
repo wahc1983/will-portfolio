@@ -84,12 +84,11 @@ Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
 ### Información personal
 
 1. **Traducciones** (`src/i18n/locales/`): `es.json`, `en.json`, `fr.json`
-2. **Hero**: textos en i18n; ilustración en `src/assets/illustrations/hero-william.webp`
-3. **About**: descripción y estadísticas en los JSON de i18n
-4. **Experience**: trabajos en `experience.jobs` (i18n) e imágenes en `Experience.jsx`
-5. **Skills**: listado de tecnologías en `Skills.jsx` + textos en locales
-6. **Projects**: listado en `Projects.jsx` + textos en locales
-7. **Contact**: email ofuscado, ilustraciones tema claro/oscuro y redes en `Contact.jsx`
+2. **Datos estáticos** (`src/data/`): skills, projects y experience (metadatos + imágenes)
+3. **Contacto** (`src/constants/contact.js`): email y ubicación
+4. **Hero**: textos en i18n; ilustración en `src/assets/illustrations/hero-william.webp`
+5. **About**: descripción y estadísticas en los JSON de i18n
+6. **Experience / Skills / Projects**: textos en i18n + datos en `src/data/`
 
 ### Ilustraciones
 
@@ -105,7 +104,7 @@ Las imágenes optimizadas (WebP) viven en `src/assets/illustrations/`:
 
 1. Crea `src/i18n/locales/<codigo>.json` copiando la estructura de `es.json`
 2. Regístralo en `src/i18n/index.js` dentro de `resources`
-3. Añade la opción en `LanguageSelector.jsx`
+3. Añade la entrada en `src/i18n/config.js` (`AVAILABLE_LANGUAGES`)
 
 ### Estilos
 
@@ -150,6 +149,16 @@ Cabeceras de seguridad (CSP, HSTS, etc.) en `public/_headers`.
 src/
 ├── assets/
 │   └── illustrations/       # Ilustraciones WebP (Hero, Experience, Contact)
+├── constants/
+│   └── contact.js           # Email y ubicación
+├── data/
+│   ├── experience.js        # Metadatos + imágenes del timeline
+│   ├── projects.js          # Tecnologías, URLs y gradientes
+│   └── skills.js            # Listado de habilidades
+├── components/
+│   ├── layout/              # Header, Footer
+│   ├── sections/            # Hero, About, Experience, Skills, Projects, Contact
+│   └── ui/                  # ThemeToggle, LanguageSelector, SocialLinks, SocialIcons
 ├── contexts/
 │   ├── themeContext.js      # Contexto React del tema
 │   └── ThemeProvider.jsx    # Provider del tema
@@ -157,10 +166,9 @@ src/
 │   ├── useClickOutside.js   # Cerrar dropdowns al click externo
 │   └── useTheme.js          # Hook de consumo del tema
 ├── i18n/
+│   ├── config.js            # Idiomas disponibles y detección
 │   ├── index.js
-│   ├── config.js
 │   └── locales/             # es, en, fr
-└── components/              # Hero, Header, About, Experience, Skills, Projects, Contact, Footer
 ```
 
 ## Licencia

@@ -1,42 +1,20 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import seniorImage from '../assets/illustrations/experience-senior.webp'
-import semiSeniorImage from '../assets/illustrations/experience-semi-senior.webp'
-import webDevImage from '../assets/illustrations/experience-web-developer.webp'
+import { experiences as experienceData } from '../../data/experience'
 import './Experience.css'
 
 const Experience = () => {
   const { t } = useTranslation()
 
-  const experiences = [
-    {
-      title: t('experience.jobs.0.title'),
-      company: t('experience.jobs.0.company'),
-      period: t('experience.jobs.0.period'),
-      description: t('experience.jobs.0.description'),
-      technologies: ['Angular v21', 'Ionic', 'Capacitor', 'Module Fed.', 'Docker'],
-      image: seniorImage,
-      imageClass: 'timeline-illustration--square',
-    },
-    {
-      title: t('experience.jobs.1.title'),
-      company: t('experience.jobs.1.company'),
-      period: t('experience.jobs.1.period'),
-      description: t('experience.jobs.1.description'),
-      technologies: ['Angular (11-13)', 'Microfrontends', 'SonarQube', 'Fortify'],
-      image: webDevImage,
-      imageClass: 'timeline-illustration--portrait',
-    },
-    {
-      title: t('experience.jobs.2.title'),
-      company: t('experience.jobs.2.company'),
-      period: t('experience.jobs.2.period'),
-      description: t('experience.jobs.2.description'),
-      technologies: ['Ruby on Rails', 'Vanilla JS', 'MariaDB', 'MySQL', 'AWS'],
-      image: semiSeniorImage,
-      imageClass: 'timeline-illustration--portrait',
-    },
-  ]
+  const experiences = experienceData.map((job) => ({
+    title: t(`experience.jobs.${job.jobIndex}.title`),
+    company: t(`experience.jobs.${job.jobIndex}.company`),
+    period: t(`experience.jobs.${job.jobIndex}.period`),
+    description: t(`experience.jobs.${job.jobIndex}.description`),
+    technologies: job.technologies,
+    image: job.image,
+    imageClass: job.imageClass,
+  }))
 
   return (
     <section id="experience" className="experience">

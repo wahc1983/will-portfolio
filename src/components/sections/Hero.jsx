@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import heroImage from '../assets/illustrations/hero-william.webp'
-import SocialLinks from './SocialLinks'
+import heroImage from '../../assets/illustrations/hero-william.webp'
+import SocialLinks from '../ui/SocialLinks'
 import './Hero.css'
 
 const Hero = () => {

@@ -1,46 +1,18 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { projects as projectsData } from '../../data/projects'
 import './Projects.css'
 
 const Projects = () => {
   const { t } = useTranslation()
 
-  const projects = [
-    {
-      title: t('projects.list.0.title'),
-      description: t('projects.list.0.description'),
-      technologies: ['Ruby on Rails', 'JavaScript', 'AWS'],
-      gradient: 0,
-    },
-    {
-      title: t('projects.list.1.title'),
-      description: t('projects.list.1.description'),
-      technologies: ['Angular', 'Microfrontends', 'TypeScript'],
-      repoUrl: 'https://bitbucket.org/wahc1983/workspace/projects/DIG',
-      gradient: 1,
-    },
-    {
-      title: t('projects.list.2.title'),
-      description: t('projects.list.2.description'),
-      technologies: ['Astro', 'TypeScript', 'JavaScript'],
-      repoUrl: 'https://github.com/wahc1983/asynchronous-javascript-academic',
-      gradient: 2,
-    },
-    {
-      title: t('projects.list.3.title'),
-      description: t('projects.list.3.description'),
-      technologies: ['Angular', 'TypeScript', 'PokéAPI'],
-      repoUrl: 'https://github.com/wahc1983/pokeAppAng',
-      gradient: 3,
-    },
-    {
-      title: t('projects.list.4.title'),
-      description: t('projects.list.4.description'),
-      technologies: ['Node.js', 'MCP SDK', 'JavaScript'],
-      repoUrl: 'https://github.com/wahc1983/mcp-will',
-      gradient: 0,
-    },
-  ]
+  const projects = projectsData.map((project) => ({
+    title: t(`projects.list.${project.listIndex}.title`),
+    description: t(`projects.list.${project.listIndex}.description`),
+    technologies: project.technologies,
+    repoUrl: project.repoUrl,
+    gradient: project.gradient,
+  }))
 
   return (
     <section id="projects" className="projects section-alt">
@@ -48,8 +20,8 @@ const Projects = () => {
         <h2>{t('projects.title')}</h2>
         <p className="section-subtitle">{t('projects.subtitle')}</p>
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card glass-card">
+          {projects.map((project) => (
+            <div key={project.title} className="project-card glass-card">
               <div className="project-image">
                 <div className={`image-placeholder gradient-${project.gradient}`} />
               </div>

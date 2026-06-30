@@ -1,9 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { CONTACT_EMAIL } from '../../constants/contact'
 import { LinkedInIcon, GitHubIcon, BitbucketIcon, EmailIcon } from './SocialIcons'
 import './SocialLinks.css'
-
-const EMAIL = ['Williamhuertas1015', 'gmail.com'].join('@')
 
 const SocialLinks = ({ showEmail = true, className = '' }) => {
   const { t } = useTranslation()
@@ -32,7 +31,7 @@ const SocialLinks = ({ showEmail = true, className = '' }) => {
     },
     ...(showEmail ? [{
       id: 'email',
-      href: `mailto:${EMAIL}`,
+      href: `mailto:${CONTACT_EMAIL}`,
       label: t('contact.details.email'),
       Icon: EmailIcon,
       external: false,

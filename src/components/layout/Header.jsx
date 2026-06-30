@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import LanguageSelector from './LanguageSelector'
-import ThemeToggle from './ThemeToggle'
+import LanguageSelector from '../ui/LanguageSelector'
+import ThemeToggle from '../ui/ThemeToggle'
 import './Header.css'
 
 const Header = () => {
