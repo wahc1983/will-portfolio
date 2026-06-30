@@ -10,11 +10,12 @@ Sitio web portfolio moderno y responsivo construido con React y Vite. Muestra ex
 - **Internacionalización**: Español (por defecto), inglés y francés
 - **Navegación interactiva**: Scroll suave y menú móvil
 - **Secciones incluidas**:
-  - Acerca de mí con estadísticas personales
-  - Línea de tiempo de experiencia laboral
-  - Habilidades con barras de progreso
+  - Hero con ilustración, CTAs y enlaces sociales
+  - Acerca de mí con estadísticas
+  - Línea de tiempo de experiencia con ilustraciones
+  - Habilidades en grid de tarjetas con iconos
   - Showcase de proyectos destacados
-  - Contacto con enlaces sociales
+  - Contacto con ilustración, datos y CTA
   - Selector de idioma y tema
 
 ## Idiomas soportados
@@ -83,11 +84,22 @@ Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
 ### Información personal
 
 1. **Traducciones** (`src/i18n/locales/`): `es.json`, `en.json`, `fr.json`
-2. **About**: descripción y estadísticas en los JSON de i18n
-3. **Experience**: trabajos en `experience.jobs` dentro de cada locale
-4. **Skills**: categorías y niveles en `Skills.jsx`
-5. **Projects**: listado en `Projects.jsx` + textos en locales
-6. **Contact**: email ofuscado y redes en `Contact.jsx`
+2. **Hero**: textos en i18n; ilustración en `src/assets/illustrations/hero-william.webp`
+3. **About**: descripción y estadísticas en los JSON de i18n
+4. **Experience**: trabajos en `experience.jobs` (i18n) e imágenes en `Experience.jsx`
+5. **Skills**: listado de tecnologías en `Skills.jsx` + textos en locales
+6. **Projects**: listado en `Projects.jsx` + textos en locales
+7. **Contact**: email ofuscado, ilustraciones tema claro/oscuro y redes en `Contact.jsx`
+
+### Ilustraciones
+
+Las imágenes optimizadas (WebP) viven en `src/assets/illustrations/`:
+
+| Archivo | Uso |
+|---------|-----|
+| `hero-william.webp` | Sección Hero |
+| `experience-*.webp` | Timeline de experiencia |
+| `contact-william-light.webp` / `contact-william-dark.webp` | Contacto (según tema) |
 
 ### Agregar nuevos idiomas
 
@@ -100,11 +112,7 @@ Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
 - CSS por componente en `src/components/`
 - Variables globales en `src/index.css` y `src/App.css`
 - Guía de temas en `THEMES.md`
-
-### Foto de perfil
-
-1. Coloca la imagen en `src/assets/` (recomendado: WebP, máx. ~600px)
-2. Impórtala en `src/components/About.jsx`
+- Layout escritorio: sidebar fijo a la derecha + contenido principal a la izquierda
 
 ## Construir para producción
 
@@ -140,6 +148,8 @@ Cabeceras de seguridad (CSP, HSTS, etc.) en `public/_headers`.
 
 ```
 src/
+├── assets/
+│   └── illustrations/       # Ilustraciones WebP (Hero, Experience, Contact)
 ├── contexts/
 │   ├── themeContext.js      # Contexto React del tema
 │   └── ThemeProvider.jsx    # Provider del tema
@@ -150,7 +160,7 @@ src/
 │   ├── index.js
 │   ├── config.js
 │   └── locales/             # es, en, fr
-└── components/              # Header, About, Experience, Skills, Projects, Contact, Footer
+└── components/              # Hero, Header, About, Experience, Skills, Projects, Contact, Footer
 ```
 
 ## Licencia
