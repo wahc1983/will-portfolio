@@ -4,89 +4,55 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.25rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.skill-category {
-  background-color: var(--card-bg);
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px var(--shadow);
-  transition: all 0.3s ease;
-}
-
-.skill-category:hover {
-  box-shadow: 0 8px 25px var(--shadow-hover);
-  transform: translateY(-2px);
-}
-
-.skill-category h3 {
+.skill-card {
+  padding: 1.5rem 1rem;
   text-align: center;
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
+  cursor: default;
 }
 
-.skills-list {
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+
+.skill-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.skill-item {
-  background-color: var(--background-alt);
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
-}
-
-.skill-item:hover {
-  border-color: var(--primary-color);
-}
-
-.skill-info {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.skill-name {
-  font-weight: 500;
-  color: var(--text-color);
-}
-
-.skill-percentage {
+  justify-content: center;
+  border-radius: 14px;
+  font-family: 'Space Mono', monospace;
   font-size: 0.9rem;
-  color: var(--primary-color);
+  font-weight: 700;
+  color: #fff;
+  background: var(--gradient-primary);
+  box-shadow: 0 4px 16px var(--glow-color);
+}
+
+.skill-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
 }
 
-.skill-bar {
-  height: 8px;
-  background-color: var(--border-color);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
-  border-radius: 4px;
-  transition: width 1s ease-in-out;
+.skill-role {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .skill-category {
-    padding: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
   }
 }

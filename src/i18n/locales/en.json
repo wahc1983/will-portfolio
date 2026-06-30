@@ -1,10 +1,23 @@
 {
   "nav": {
+    "home": "Home",
     "about": "About",
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "tag": "Senior Full Stack Developer",
+    "greeting": "Hi, I'm",
+    "nameFirst": "William",
+    "nameLast": "Huertas",
+    "bio": "I design and build scalable web solutions with Angular, Ruby on Rails, and Node.js. Pioneer in AI-augmented hybrid development.",
+    "ctaProjects": "View Projects",
+    "ctaContact": "Contact Me",
+    "imageAlt": "William Huertas Photo"
   },
   "header": {
     "title": "William Huertas"
@@ -18,8 +31,7 @@
       "experience": "12+ Years Experience",
       "projects": "Completed Projects",
       "technologies": "Technologies Mastered"
-    },
-    "imageAlt": "William Huertas Photo"
+    }
   },
   "experience": {
     "title": "Work Experience",
@@ -46,6 +58,7 @@
   },
   "skills": {
     "title": "Skills & Technologies",
+    "subtitle": "Technologies I work with",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
@@ -54,6 +67,7 @@
   },
   "projects": {
     "title": "Featured Projects",
+    "subtitle": "A selection of my recent work",
     "list": [
       {
         "title": "CRM Incwo Integration",
@@ -87,10 +101,16 @@
     "subtitle": "Let's work together!",
     "description": "I am always open to discussing new opportunities and exciting technical challenges. Feel free to message me!",
     "details": {
+      "title": "Contact Details",
       "email": "Email",
       "phone": "Phone",
       "location": "Location"
     },
+    "cta": {
+      "title": "Have a project in mind?",
+      "button": "Send Email"
+    },
+    "imageAlt": "William Huertas illustration",
     "form": {
       "name": "Your Name",
       "email": "Your Email",

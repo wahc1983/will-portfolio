@@ -16,11 +16,24 @@
   
   /* Layout */
   --sidebar-width: 270px;
+  --page-gutter-desktop: 3rem;
   
   /* Acentos */
   --primary-color: #fface6;
   --primary-hover: #cf8fc5;
   --secondary-color: #a91794;
+  --accent-blue: #6b21a8;
+
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #fface6 0%, #a91794 55%, #6b21a8 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #cf8fc5 0%, #850074 55%, #581c87 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(255, 172, 230, 0.15) 0%, rgba(107, 33, 168, 0.1) 100%);
+
+  /* Glow & glass */
+  --glow-color: rgba(255, 172, 230, 0.35);
+  --glow-strong: rgba(169, 23, 148, 0.45);
+  --glass-bg: rgba(36, 27, 40, 0.55);
+  --glass-border: rgba(255, 172, 230, 0.18);
 
   /* Texto */
   --text-color: #ffffff;
@@ -55,6 +68,18 @@
   --primary-color: #a91794;
   --primary-hover: #850074;
   --secondary-color: #cf8fc5;
+  --accent-blue: #6b21a8;
+
+  /* Gradientes */
+  --gradient-primary: linear-gradient(135deg, #cf8fc5 0%, #a91794 55%, #6b21a8 100%);
+  --gradient-primary-hover: linear-gradient(135deg, #a91794 0%, #850074 55%, #581c87 100%);
+  --gradient-subtle: linear-gradient(135deg, rgba(169, 23, 148, 0.08) 0%, rgba(107, 33, 168, 0.06) 100%);
+
+  /* Glow & glass */
+  --glow-color: rgba(169, 23, 148, 0.2);
+  --glow-strong: rgba(107, 33, 168, 0.25);
+  --glass-bg: rgba(220, 218, 219, 0.7);
+  --glass-border: rgba(169, 23, 148, 0.15);
 
   /* Texto */
   --text-color: #1f1a1d;

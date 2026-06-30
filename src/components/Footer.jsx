@@ -14,6 +14,7 @@ const Footer = () => {
             <p>&copy; {currentYear} {t('header.title')}. {t('footer.rights')}</p>
           </div>
           <div className="footer-links">
+            <a href="#home">{t('nav.home')}</a>
             <a href="#about">{t('nav.about')}</a>
             <a href="#experience">{t('nav.experience')}</a>
             <a href="#skills">{t('nav.skills')}</a>

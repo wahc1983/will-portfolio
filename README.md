@@ -1,24 +1,23 @@
 # Will Portfolio
 
-Un sitio web portfolio moderno y responsivo construido con React y Vite para mostrar tu experiencia profesional, habilidades y proyectos. Incluye soporte completo para internacionalización (i18n) con español, inglés y francés.
+Sitio web portfolio moderno y responsivo construido con React y Vite. Muestra experiencia profesional, habilidades y proyectos, con soporte completo de internacionalización (español, inglés y francés).
 
 ## Características
 
-- **Diseño Responsivo**: Funciona perfectamente en escritorio, tablet y dispositivos móviles
-- **Interfaz Moderna**: Diseño limpio y profesional con animaciones suaves
-- **Modo Oscuro/Claro**: Toggle completo entre tema claro y oscuro con persistencia
-- **Internacionalización**: Soporte completo para español (por defecto), inglés y francés
-- **Navegación Interactiva**: Navegación con desplazamiento suave y menú móvil
-- **Secciones Incluidas**:
-  - Acerca de Mí con estadísticas personales
+- **Diseño responsivo**: Escritorio, tablet y móvil
+- **Interfaz moderna**: Paleta inspirada en el design system de NgRx (morado/rosa)
+- **Modo oscuro/claro**: Toggle con persistencia en `localStorage` y detección de preferencia del sistema
+- **Internacionalización**: Español (por defecto), inglés y francés
+- **Navegación interactiva**: Scroll suave y menú móvil
+- **Secciones incluidas**:
+  - Acerca de mí con estadísticas personales
   - Línea de tiempo de experiencia laboral
   - Habilidades con barras de progreso
   - Showcase de proyectos destacados
-  - Formulario de contacto
-  - Enlaces sociales
+  - Contacto con enlaces sociales
   - Selector de idioma y tema
 
-## Idiomas Soportados
+## Idiomas soportados
 
 - 🇪🇸 **Español** (idioma por defecto)
 - 🇺🇸 **Inglés**
@@ -26,25 +25,35 @@ Un sitio web portfolio moderno y responsivo construido con React y Vite para mos
 
 El sitio detecta automáticamente el idioma del navegador y permite cambiar entre idiomas usando el selector en el header.
 
-## Temas Soportados
+## Temas soportados
 
-- 🌞 **Modo Claro** (por defecto)
-- 🌙 **Modo Oscuro**
+- 🌙 **Modo oscuro** (variables CSS por defecto en `:root`)
+- 🌞 **Modo claro**
 
-El sitio detecta automáticamente la preferencia de tema del sistema y permite alternar entre modos usando el botón toggle en el header. La preferencia se guarda en localStorage.
+Si no hay preferencia guardada, se usa `prefers-color-scheme` del sistema. El toggle del header guarda la elección en `localStorage`.
+
+### Paleta de colores (NgRx)
+
+| Token | Oscuro | Claro |
+|-------|--------|-------|
+| Primary | `#fface6` | `#a91794` |
+| Secondary | `#a91794` | `#cf8fc5` |
+| Background | `#17111a` | `#f5f3f4` |
+
+Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
 
 ## Comenzando
 
 ### Prerrequisitos
 
-- Node.js (versión 14 o superior)
-- npm o yarn
+- Node.js 18 o superior
+- npm
 
 ### Instalación
 
 1. Navega al directorio del proyecto:
    ```bash
-   cd will_portfolio
+   cd will-portfolio
    ```
 
 2. Instala las dependencias:
@@ -57,108 +66,93 @@ El sitio detecta automáticamente la preferencia de tema del sistema y permite a
    npm run dev
    ```
 
-4. Abre tu navegador y visita `http://localhost:5173`
+4. Abre tu navegador en `http://localhost:5173`
+
+## Scripts disponibles
+
+| Comando | Descripción |
+|---------|-------------|
+| `npm run dev` | Servidor de desarrollo Vite |
+| `npm run build` | Build de producción |
+| `npm run lint` | ESLint |
+| `npm run preview` | Build + preview local con Wrangler |
+| `npm run deploy` | Build + despliegue a Cloudflare Workers |
 
 ## Personalización
 
-### Información Personal
+### Información personal
 
-Actualiza los siguientes archivos con tu información personal:
+1. **Traducciones** (`src/i18n/locales/`): `es.json`, `en.json`, `fr.json`
+2. **About**: descripción y estadísticas en los JSON de i18n
+3. **Experience**: trabajos en `experience.jobs` dentro de cada locale
+4. **Skills**: categorías y niveles en `Skills.jsx`
+5. **Projects**: listado en `Projects.jsx` + textos en locales
+6. **Contact**: email ofuscado y redes en `Contact.jsx`
 
-1. **Archivos de Traducción** (`src/i18n/locales/`):
-   - `es.json`: Contenido en español
-   - `en.json`: Contenido en inglés  
-   - `fr.json`: Contenido en francés
+### Agregar nuevos idiomas
 
-2. **Sección About** - Actualiza en los archivos de traducción:
-   - Tu descripción, estadísticas e información personal
-
-3. **Sección Experience** - Reemplaza con tu experiencia laboral real:
-   - Títulos de trabajo, empresas, fechas y descripciones
-
-4. **Sección Skills** - Modifica según tu experiencia:
-   - Categorías de habilidades y niveles de competencia
-   - Agrega o quita tecnologías según tu expertise
-
-5. **Sección Projects** - Reemplaza con tus proyectos reales:
-   - Descripciones de proyectos, tecnologías y enlaces
-
-6. **Sección Contact** - Actualiza tu información de contacto:
-   - Email real, teléfono y enlaces de redes sociales
-
-### Agregar Nuevos Idiomas
-
-Para agregar un nuevo idioma:
-
-1. Crea un nuevo archivo JSON en `src/i18n/locales/` (ej: `de.json` para alemán)
-2. Copia la estructura de `es.json` y traduce el contenido
-3. Agrega el idioma en `src/i18n/index.js` en el objeto `resources`
-4. Actualiza el componente `LanguageSelector.jsx` para incluir el nuevo idioma
+1. Crea `src/i18n/locales/<codigo>.json` copiando la estructura de `es.json`
+2. Regístralo en `src/i18n/index.js` dentro de `resources`
+3. Añade la opción en `LanguageSelector.jsx`
 
 ### Estilos
 
-- Cada componente tiene su propio archivo CSS en el directorio `src/components/`
-- Estilos globales están en `src/App.css` y `src/index.css`
-- El esquema de colores se puede personalizar actualizando las propiedades CSS personalizadas
+- CSS por componente en `src/components/`
+- Variables globales en `src/index.css` y `src/App.css`
+- Guía de temas en `THEMES.md`
 
-### Agregar tu Foto
+### Foto de perfil
 
-Reemplaza el placeholder en la sección About:
-1. Agrega tu foto al directorio `src/assets/`
-2. Impórtala y úsala en `src/components/About.jsx`
+1. Coloca la imagen en `src/assets/` (recomendado: WebP, máx. ~600px)
+2. Impórtala en `src/components/About.jsx`
 
-## Construir para Producción
+## Construir para producción
 
 ```bash
 npm run build
 ```
 
-Los archivos construidos estarán en el directorio `dist/`, listos para despliegue.
+Los artefactos quedan en `dist/`.
 
-## Despliegue
+## Despliegue (Cloudflare Workers)
 
-Puedes desplegar este portfolio en varias plataformas:
+El proyecto está configurado para **Cloudflare Workers** con assets estáticos:
 
-- **Netlify**: Arrastra y suelta la carpeta `dist`
-- **Vercel**: Conecta tu repositorio de GitHub
-- **GitHub Pages**: Usa GitHub Actions para despliegue automático
-- **Cualquier servicio de hosting estático**
+```bash
+npm run deploy
+```
 
-## Tecnologías Utilizadas
+Requiere [Wrangler](https://developers.cloudflare.com/workers/wrangler/) autenticado (`wrangler login`). La configuración está en `wrangler.jsonc`.
+
+Cabeceras de seguridad (CSP, HSTS, etc.) en `public/_headers`.
+
+## Tecnologías
 
 - React 19
-- Vite
-- react-i18next (internacionalización)
-- Context API (gestión de tema)
-- CSS3 con Variables CSS y Flexbox/Grid
-- JavaScript moderno (ES6+)
-- Diseño responsivo
-- Google Fonts (Inter)
-- LocalStorage (persistencia de preferencias)
+- Vite 8 + Rolldown
+- react-i18next
+- Context API + hook `useTheme`
+- CSS3 (variables, Flexbox/Grid)
+- Cloudflare Workers (`@cloudflare/vite-plugin`, Wrangler)
+- Google Fonts (Oxanium, Roboto, Space Mono)
 
-## Estructura de Internacionalización y Temas
+## Estructura del proyecto
 
 ```
 src/
 ├── contexts/
-│   └── ThemeContext.jsx     # Contexto para gestión de tema
-├── i18n/
-│   ├── index.js             # Configuración de i18next
-│   └── locales/
-│       ├── es.json          # Traducciones en español
-│       ├── en.json          # Traducciones en inglés
-│       └── fr.json          # Traducciones en francés
+│   ├── themeContext.js      # Contexto React del tema
+│   └── ThemeProvider.jsx    # Provider del tema
 ├── hooks/
-│   └── useClickOutside.js   # Hook para cerrar dropdowns
-└── components/
-    ├── LanguageSelector.jsx # Selector de idioma
-    └── ThemeToggle.jsx      # Toggle de tema oscuro/claro
+│   ├── useClickOutside.js   # Cerrar dropdowns al click externo
+│   └── useTheme.js          # Hook de consumo del tema
+├── i18n/
+│   ├── index.js
+│   ├── config.js
+│   └── locales/             # es, en, fr
+└── components/              # Header, About, Experience, Skills, Projects, Contact, Footer
 ```
 
 ## Licencia
 
-Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
-
-## Soporte
-
-Si necesitas ayuda personalizando tu portfolio, no dudes en contactar o crear un issue en el repositorio.
+Código abierto bajo la [Licencia MIT](LICENSE).

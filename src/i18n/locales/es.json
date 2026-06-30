@@ -1,10 +1,23 @@
 {
   "nav": {
+    "home": "Inicio",
     "about": "Acerca de",
     "experience": "Experiencia",
     "skills": "Habilidades",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "tag": "Senior Full Stack Developer",
+    "greeting": "Hola, soy",
+    "nameFirst": "William",
+    "nameLast": "Huertas",
+    "bio": "Diseño e implemento soluciones web escalables con Angular, Ruby on Rails y Node.js. Pionero en desarrollo híbrido impulsado por IA.",
+    "ctaProjects": "Ver Proyectos",
+    "ctaContact": "Contactar",
+    "imageAlt": "Foto de William Huertas"
   },
   "header": {
     "title": "William Huertas"
@@ -18,8 +31,7 @@
       "experience": "12+ Años de Experiencia",
       "projects": "Proyectos Completados",
       "technologies": "Tecnologías Dominadas"
-    },
-    "imageAlt": "Foto de William Huertas"
+    }
   },
   "experience": {
     "title": "Experiencia Laboral",
@@ -46,6 +58,7 @@
   },
   "skills": {
     "title": "Habilidades y Tecnologías",
+    "subtitle": "Tecnologías con las que trabajo",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
@@ -54,6 +67,7 @@
   },
   "projects": {
     "title": "Proyectos Destacados",
+    "subtitle": "Una selección de mi trabajo reciente",
     "list": [
       {
         "title": "Integración CRM Incwo",
@@ -87,10 +101,16 @@
     "subtitle": "¡Trabajemos juntos!",
     "description": "Siempre estoy abierto a discutir nuevas oportunidades y emocionantes desafíos técnicos. ¡No dudes en escribirme!",
     "details": {
+      "title": "Datos de Contacto",
       "email": "Email",
       "phone": "Teléfono",
       "location": "Ubicación"
     },
+    "cta": {
+      "title": "¿Tienes un proyecto en mente?",
+      "button": "Enviar Email"
+    },
+    "imageAlt": "Ilustración de William Huertas",
     "form": {
       "name": "Tu Nombre",
       "email": "Tu Correo",

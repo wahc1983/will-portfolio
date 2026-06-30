@@ -5,63 +5,38 @@ import './Skills.css'
 const Skills = () => {
   const { t } = useTranslation()
 
-  const skillCategories = [
-    {
-      title: t('skills.categories.frontend'),
-      skills: [
-        { name: "Angular (v11-21)", level: 95 },
-        { name: "Microfrontends (Single-SPA, Module Fed)", level: 90 },
-        { name: "Ionic & Capacitor", level: 85 },
-        { name: "React & Redux", level: 85 },
-        { name: "TypeScript", level: 90 }
-      ]
-    },
-    {
-      title: t('skills.categories.backend'),
-      skills: [
-        { name: "Ruby on Rails", level: 90 },
-        { name: "Node.js", level: 85 },
-        { name: "RESTful APIs", level: 90 },
-        { name: "SQL (PostgreSQL/MySQL)", level: 85 },
-        { name: "Python", level: 75 }
-      ]
-    },
-    {
-      title: t('skills.categories.tools'),
-      skills: [
-        { name: "Docker", level: 85 },
-        { name: "Jenkins (CI/CD)", level: 85 },
-        { name: "SonarQube & Fortify", level: 80 },
-        { name: "AI Agents (Copilot, Kiro, Antigravity)", level: 95 },
-        { name: "Spec-Driven / Vibe Coding", level: 90 }
-      ]
-    }
+  const skills = [
+    { name: 'Angular', abbr: 'Ng', roleKey: 'frontend' },
+    { name: 'TypeScript', abbr: 'TS', roleKey: 'frontend' },
+    { name: 'React', abbr: 'Re', roleKey: 'frontend' },
+    { name: 'Ionic', abbr: 'Io', roleKey: 'frontend' },
+    { name: 'Ruby on Rails', abbr: 'Rb', roleKey: 'backend' },
+    { name: 'Node.js', abbr: 'Nd', roleKey: 'backend' },
+    { name: 'PostgreSQL', abbr: 'Pg', roleKey: 'backend' },
+    { name: 'REST APIs', abbr: 'API', roleKey: 'backend' },
+    { name: 'Docker', abbr: 'Dk', roleKey: 'tools' },
+    { name: 'Jenkins', abbr: 'Jk', roleKey: 'tools' },
+    { name: 'SonarQube', abbr: 'SQ', roleKey: 'tools' },
+    { name: 'AI Agents', abbr: 'AI', roleKey: 'tools' },
   ]
+
+  const roleLabels = {
+    frontend: t('skills.categories.frontend'),
+    backend: t('skills.categories.backend'),
+    tools: t('skills.categories.tools'),
+  }
 
   return (
     <section id="skills" className="skills">
       <div className="container">
         <h2>{t('skills.title')}</h2>
+        <p className="section-subtitle">{t('skills.subtitle')}</p>
         <div className="skills-grid">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="skill-category">
-              <h3>{category.title}</h3>
-              <div className="skills-list">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="skill-item">
-                    <div className="skill-info">
-                      <span className="skill-name">{skill.name}</span>
-                      <span className="skill-percentage">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div 
-                        className="skill-progress" 
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+          {skills.map((skill) => (
+            <div key={skill.name} className="skill-card glass-card">
+              <div className="skill-icon">{skill.abbr}</div>
+              <h3>{skill.name}</h3>
+              <span className="skill-role">{roleLabels[skill.roleKey]}</span>
             </div>
           ))}
         </div>

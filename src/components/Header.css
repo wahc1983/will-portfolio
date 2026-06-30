@@ -33,14 +33,22 @@
   margin-bottom: 2rem;
 }
 
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
 .header-logo-icon {
   min-width: 36px;
   height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
-  color: var(--background-color);
+  background: var(--gradient-primary);
+  color: #ffffff;
   font-family: 'Oxanium', sans-serif;
   font-weight: 900;
   font-size: 1.4rem;
@@ -72,6 +80,13 @@
 
 .logo:hover .header-logo-icon {
   transform: rotate(-10deg) scale(1.05);
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+.logo-link h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 .logo h2 {
@@ -105,7 +120,8 @@
   font-size: 1.1rem;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: var(--primary-color);
 }
 
@@ -188,6 +204,13 @@
     gap: 0.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  .logo-link {
+    flex-direction: row;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
   }
 
   .header-logo-icon {

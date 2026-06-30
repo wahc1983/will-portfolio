@@ -1,6 +1,7 @@
 import React from 'react'
-import { ThemeProvider } from './contexts/ThemeContext'
+import { ThemeProvider } from './contexts/ThemeProvider'
 import Header from './components/Header'
+import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
 import Skills from './components/Skills'
@@ -15,6 +16,7 @@ function App() {
       <div className="App">
         <Header />
         <main>
+          <Hero />
           <About />
           <Experience />
           <Skills />

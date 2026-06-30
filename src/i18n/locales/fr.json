@@ -1,10 +1,23 @@
 {
   "nav": {
+    "home": "Accueil",
     "about": "À propos",
     "experience": "Expérience",
     "skills": "Compétences",
     "projects": "Projets",
-    "contact": "Contact"
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "hero": {
+    "tag": "Développeur Full Stack Senior",
+    "greeting": "Bonjour, je suis",
+    "nameFirst": "William",
+    "nameLast": "Huertas",
+    "bio": "Je conçois et développe des solutions web évolutives avec Angular, Ruby on Rails et Node.js. Pionnier du développement hybride assisté par l'IA.",
+    "ctaProjects": "Voir les Projets",
+    "ctaContact": "Me Contacter",
+    "imageAlt": "Photo de William Huertas"
   },
   "header": {
     "title": "William Huertas"
@@ -18,8 +31,7 @@
       "experience": "12+ Années d'Expérience",
       "projects": "Projets Terminés",
       "technologies": "Technologies Maîtrisées"
-    },
-    "imageAlt": "Photo de William Huertas"
+    }
   },
   "experience": {
     "title": "Expérience Professionnelle",
@@ -46,6 +58,7 @@
   },
   "skills": {
     "title": "Compétences et Technologies",
+    "subtitle": "Technologies avec lesquelles je travaille",
     "categories": {
       "frontend": "Frontend",
       "backend": "Backend",
@@ -54,6 +67,7 @@
   },
   "projects": {
     "title": "Projets en Vedette",
+    "subtitle": "Une sélection de mes travaux récents",
     "list": [
       {
         "title": "Intégration CRM Incwo",
@@ -87,10 +101,16 @@
     "subtitle": "Travaillons ensemble !",
     "description": "Je suis toujours ouvert à discuter de nouvelles opportunités et de défis techniques passionnants. N'hésitez pas à m'envoyer un message !",
     "details": {
+      "title": "Coordonnées",
       "email": "Email",
       "phone": "Téléphone",
       "location": "Localisation"
     },
+    "cta": {
+      "title": "Vous avez un projet en tête ?",
+      "button": "Envoyer un Email"
+    },
+    "imageAlt": "Illustration de William Huertas",
     "form": {
       "name": "Votre Nom",
       "email": "Votre Email",

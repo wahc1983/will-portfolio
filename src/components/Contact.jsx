@@ -1,73 +1,66 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { useTheme } from '../hooks/useTheme'
+import SocialLinks from './SocialLinks'
+import { EmailIcon, MapPinIcon } from './SocialIcons'
+import contactImageLight from '../assets/illustrations/contact-william-light.webp'
+import contactImageDark from '../assets/illustrations/contact-william-dark.webp'
 import './Contact.css'
 
 const Contact = () => {
   const { t } = useTranslation()
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert(t('contact.form.success'))
-    setFormData({ name: '', email: '', message: '' })
-  }
+  const { isDarkMode } = useTheme()
+  const email = ['Williamhuertas1015', 'gmail.com'].join('@')
+  const contactImage = isDarkMode ? contactImageDark : contactImageLight
 
   return (
     <section id="contact" className="contact">
       <div className="container">
         <h2>{t('contact.title')}</h2>
+        <p className="section-subtitle">{t('contact.subtitle')}</p>
         <div className="contact-content">
-          <div className="contact-info">
-            <h3>{t('contact.subtitle')}</h3>
-            <p>{t('contact.description')}</p>
-            <div className="contact-details">
-              <div className="contact-item">
-                <strong>{t('contact.details.email')}:</strong>
-                <a href={`mailto:${['Williamhuertas1015', 'gmail.com'].join('@')}`} className="social-link" style={{textTransform: 'none'}}>
-                  {['Williamhuertas1015', 'gmail.com'].join('@')}
-                </a>
-              </div>
+          <div className="contact-visual">
+            <img
+              src={contactImage}
+              alt={t('contact.imageAlt')}
+              className="contact-illustration"
+            />
+          </div>
 
-              <div className="contact-item">
-                <strong>{t('contact.details.location')}:</strong>
-                <span>Bogotá, Colombia</span>
-              </div>
+          <div className="contact-info">
+            <div className="glass-card contact-details-card">
+              <h3>{t('contact.details.title')}</h3>
+              <ul className="contact-list">
+                <li>
+                  <span className="contact-icon" aria-hidden="true">
+                    <EmailIcon />
+                  </span>
+                  <div>
+                    <span className="contact-label">{t('contact.details.email')}</span>
+                    <a href={`mailto:${email}`} className="contact-value">{email}</a>
+                  </div>
+                </li>
+                <li>
+                  <span className="contact-icon" aria-hidden="true">
+                    <MapPinIcon />
+                  </span>
+                  <div>
+                    <span className="contact-label">{t('contact.details.location')}</span>
+                    <span className="contact-value">Bogotá, Colombia</span>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div className="social-links">
-              <a href="https://linkedin.com/in/william-huertas-05928418/" target="_blank" rel="noopener noreferrer" className="social-link">{t('contact.social.linkedin')}</a>
-              <a href="https://github.com/wahc1983" target="_blank" rel="noopener noreferrer" className="social-link">{t('contact.social.github')}</a>
-              <a href="https://bitbucket.org/wahc1983" target="_blank" rel="noopener noreferrer" className="social-link">{t('contact.social.bitbucket')}</a>
+
+            <div className="glass-card contact-cta-card">
+              <h3>{t('contact.cta.title')}</h3>
+              <p>{t('contact.description')}</p>
+              <a href={`mailto:${email}`} className="btn btn-primary contact-email-btn">
+                {t('contact.cta.button')} →
+              </a>
+              <SocialLinks showEmail={false} />
             </div>
           </div>
-          
-          {/* 
-          Formulario oculto temporalmente
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input type="text" name="name" placeholder={t('contact.form.name')} value={formData.name} onChange={handleChange} required />
-            </div>
-            <div className="form-group">
-              <input type="email" name="email" placeholder={t('contact.form.email')} value={formData.email} onChange={handleChange} required />
-            </div>
-            <div className="form-group">
-              <textarea name="message" placeholder={t('contact.form.message')} rows="5" value={formData.message} onChange={handleChange} required ></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary">{t('contact.form.send')}</button>
-          </form>
-          */}
         </div>
       </div>
     </section>
