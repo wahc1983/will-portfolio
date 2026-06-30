@@ -24,7 +24,7 @@ const Experience = () => {
       period: t('experience.jobs.1.period'),
       description: t('experience.jobs.1.description'),
       technologies: ['Angular (11-13)', 'Microfrontends', 'SonarQube', 'Fortify'],
-      image: semiSeniorImage,
+      image: webDevImage,
       imageClass: 'timeline-illustration--portrait',
     },
     {
@@ -33,7 +33,7 @@ const Experience = () => {
       period: t('experience.jobs.2.period'),
       description: t('experience.jobs.2.description'),
       technologies: ['Ruby on Rails', 'Vanilla JS', 'MariaDB', 'MySQL', 'AWS'],
-      image: webDevImage,
+      image: semiSeniorImage,
       imageClass: 'timeline-illustration--portrait',
     },
   ]
