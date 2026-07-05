@@ -40,7 +40,10 @@ const Hero = () => {
         <div className="hero-visual">
           <div className="hero-badge hero-badge-code" aria-hidden="true">&lt;/&gt;</div>
           <div className="hero-image-frame">
-            <img src={heroImage} alt={t('hero.imageAlt')} className="hero-image" />
+            <div className="hero-image-aura" aria-hidden="true" />
+            <div className="hero-image-morph">
+              <img src={heroImage} alt={t('hero.imageAlt')} className="hero-image" />
+            </div>
           </div>
         </div>
       </div>
