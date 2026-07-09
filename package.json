@@ -2,6 +2,7 @@
   "name": "will_portfolio",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "pnpm@10.11.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -36,9 +37,11 @@
     "globals": "^17.5.0",
     "jsdom": "^29.1.1",
     "prettier": "^3.9.4",
-    "rolldown-vite": "^7.3.1",
     "vite": "^8.0.8",
     "vitest": "^4.1.10",
     "wrangler": "^4.82.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp", "workerd"]
   }
 }
