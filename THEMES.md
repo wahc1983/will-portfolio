@@ -10,35 +10,20 @@ El sistema de temas utiliza variables CSS que se definen en `src/index.css` y `s
 
 ```css
 /* Colores primarios */
---primary-color: Color principal del sitio
---primary-hover: Color principal en hover
---secondary-color: Color secundario
-
-/* Fondos */
---background-color: Fondo principal
---background-alt: Fondo alternativo (secciones pares)
---card-bg: Fondo de tarjetas y componentes
-
-/* Textos */
---text-color: Color de texto principal
---text-secondary: Color de texto secundario
---text-muted: Color de texto atenuado
-
-/* Bordes y sombras */
---border-color: Color de bordes
---border-hover: Color de bordes en hover
---shadow: Sombra principal
---shadow-hover: Sombra en hover
-
-/* Componentes específicos */
---header-bg: Fondo del header
---footer-bg: Fondo del footer
---footer-text: Texto del footer
+--primary-color: Color principal del sitio --primary-hover: Color principal en hover
+  --secondary-color: Color secundario /* Fondos */ --background-color: Fondo principal
+  --background-alt: Fondo alternativo (secciones pares) --card-bg: Fondo de tarjetas y componentes
+  /* Textos */ --text-color: Color de texto principal --text-secondary: Color de texto secundario
+  --text-muted: Color de texto atenuado /* Bordes y sombras */ --border-color: Color de bordes
+  --border-hover: Color de bordes en hover --shadow: Sombra principal --shadow-hover: Sombra en
+  hover /* Componentes específicos */ --header-bg: Fondo del header --footer-bg: Fondo del footer
+  --footer-text: Texto del footer;
 ```
 
 ## Personalizar Colores
 
 ### Tema Claro
+
 Para personalizar el tema claro, modifica las variables en `:root.light-theme`:
 
 ```css
@@ -50,6 +35,7 @@ Para personalizar el tema claro, modifica las variables en `:root.light-theme`:
 ```
 
 ### Tema Oscuro
+
 Para personalizar el tema oscuro, modifica las variables en `:root.dark-theme`:
 
 ```css
@@ -63,6 +49,7 @@ Para personalizar el tema oscuro, modifica las variables en `:root.dark-theme`:
 ## Ejemplos de Esquemas de Color
 
 ### Esquema Azul (Actual)
+
 ```css
 /* Claro */
 --primary-color: #007bff;
@@ -74,6 +61,7 @@ Para personalizar el tema oscuro, modifica las variables en `:root.dark-theme`:
 ```
 
 ### Esquema Verde
+
 ```css
 /* Claro */
 --primary-color: #28a745;
@@ -85,6 +73,7 @@ Para personalizar el tema oscuro, modifica las variables en `:root.dark-theme`:
 ```
 
 ### Esquema Púrpura
+
 ```css
 /* Claro */
 --primary-color: #6f42c1;
@@ -96,6 +85,7 @@ Para personalizar el tema oscuro, modifica las variables en `:root.dark-theme`:
 ```
 
 ### Esquema Naranja
+
 ```css
 /* Claro */
 --primary-color: #fd7e14;
@@ -111,6 +101,7 @@ Para personalizar el tema oscuro, modifica las variables en `:root.dark-theme`:
 Para agregar un tema completamente nuevo (ej: tema sepia):
 
 1. **Crear nuevas variables CSS:**
+
 ```css
 :root.sepia-theme {
   --primary-color: #8b4513;
@@ -123,6 +114,7 @@ Para agregar un tema completamente nuevo (ej: tema sepia):
 ```
 
 2. **Actualizar el ThemeContext:**
+
 ```jsx
 // En src/contexts/ThemeContext.jsx
 const [theme, setTheme] = useState('light') // 'light', 'dark', 'sepia'
@@ -133,6 +125,7 @@ const applyTheme = (themeName) => {
 ```
 
 3. **Actualizar el ThemeToggle:**
+
 ```jsx
 // En src/components/ThemeToggle.jsx
 // Cambiar de botón toggle a selector dropdown para múltiples temas
@@ -141,8 +134,11 @@ const applyTheme = (themeName) => {
 ## Transiciones y Animaciones
 
 Todas las transiciones de tema están configuradas con:
+
 ```css
-transition: background-color 0.3s ease, color 0.3s ease;
+transition:
+  background-color 0.3s ease,
+  color 0.3s ease;
 ```
 
 Para cambiar la velocidad de transición, modifica el valor `0.3s` en los archivos CSS.
@@ -150,11 +146,13 @@ Para cambiar la velocidad de transición, modifica el valor `0.3s` en los archiv
 ## Detección Automática de Tema
 
 El tema se detecta automáticamente usando:
+
 ```javascript
 window.matchMedia('(prefers-color-scheme: dark)').matches
 ```
 
 Para deshabilitar la detección automática, modifica el `ThemeContext.jsx`:
+
 ```jsx
 const [isDarkMode, setIsDarkMode] = useState(false) // Siempre empezar en claro
 ```
@@ -162,6 +160,7 @@ const [isDarkMode, setIsDarkMode] = useState(false) // Siempre empezar en claro
 ## Persistencia
 
 El tema seleccionado se guarda en `localStorage` con la clave `'theme'`. Para cambiar esto:
+
 ```jsx
 localStorage.setItem('your-custom-key', theme)
 ```
@@ -183,14 +182,17 @@ localStorage.setItem('your-custom-key', theme)
 ## Solución de Problemas
 
 ### El tema no cambia
+
 - Verifica que las variables CSS estén definidas correctamente
 - Asegúrate de que la clase del tema se aplique al `document.documentElement`
 - Revisa la consola del navegador por errores
 
 ### Colores inconsistentes
+
 - Verifica que todos los componentes usen variables CSS en lugar de colores hardcodeados
 - Asegúrate de que las variables estén definidas en ambos temas
 
 ### Transiciones bruscas
+
 - Agrega `transition` a los elementos que cambian de color
 - Verifica que las transiciones no estén siendo sobrescritas por otros estilos

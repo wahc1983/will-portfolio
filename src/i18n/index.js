@@ -10,14 +10,14 @@ import { DEFAULT_LANGUAGE, LANGUAGE_DETECTION_OPTIONS } from './config'
 
 const resources = {
   es: {
-    translation: es
+    translation: es,
   },
   en: {
-    translation: en
+    translation: en,
   },
   fr: {
-    translation: fr
-  }
+    translation: fr,
+  },
 }
 
 i18n
@@ -27,9 +27,9 @@ i18n
     resources,
     fallbackLng: DEFAULT_LANGUAGE,
     debug: false,
-    
+
     interpolation: {
-      escapeValue: false // React ya escapa por defecto
+      escapeValue: false, // React ya escapa por defecto
     },
 
     detection: LANGUAGE_DETECTION_OPTIONS,

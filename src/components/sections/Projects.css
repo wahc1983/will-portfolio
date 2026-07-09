@@ -36,15 +36,29 @@
 }
 
 @keyframes moveGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.gradient-0 { background-image: linear-gradient(-45deg, #17111a, #cf8fc5, #6b21a8); }
-.gradient-1 { background-image: linear-gradient(-45deg, #241b28, #fface6, #a91794); }
-.gradient-2 { background-image: linear-gradient(-45deg, #17111a, #a91794, #6b21a8); }
-.gradient-3 { background-image: linear-gradient(-45deg, #241b28, #cf8fc5, #850074); }
+.gradient-0 {
+  background-image: linear-gradient(-45deg, #17111a, #cf8fc5, #6b21a8);
+}
+.gradient-1 {
+  background-image: linear-gradient(-45deg, #241b28, #fface6, #a91794);
+}
+.gradient-2 {
+  background-image: linear-gradient(-45deg, #17111a, #a91794, #6b21a8);
+}
+.gradient-3 {
+  background-image: linear-gradient(-45deg, #241b28, #cf8fc5, #850074);
+}
 
 .project-content {
   padding: 1.5rem;

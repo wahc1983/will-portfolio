@@ -171,7 +171,8 @@
 
 /* Morph sutil: rectángulo redondeado con ligera variación en esquinas */
 @keyframes hero-morph {
-  0%, 100% {
+  0%,
+  100% {
     border-radius: 20px 24px 22px 26px;
   }
   50% {
@@ -180,13 +181,25 @@
 }
 
 @keyframes hero-border-shimmer {
-  0%, 100% { background-position: 0% 40%; }
-  50% { background-position: 100% 60%; }
+  0%,
+  100% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
 }
 
 @keyframes hero-aura-pulse {
-  0%, 100% { opacity: 0.75; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.03); }
+  0%,
+  100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
 }
 
 .hero-badge {
@@ -212,8 +225,13 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

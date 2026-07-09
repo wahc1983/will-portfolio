@@ -17,16 +17,23 @@ const Hero = () => {
           <h1 className="hero-title">
             <span className="hero-greeting">{t('hero.greeting')}</span>
             <span className="hero-name">
-              {t('hero.nameFirst')}{' '}
-              <span className="gradient-text">{t('hero.nameLast')}</span>
+              {t('hero.nameFirst')} <span className="gradient-text">{t('hero.nameLast')}</span>
             </span>
           </h1>
           <p className="hero-bio">{t('hero.bio')}</p>
           <div className="hero-ctas">
-            <a href="#projects" className="btn btn-primary" onClick={createScrollHandler('projects')}>
+            <a
+              href="#projects"
+              className="btn btn-primary"
+              onClick={createScrollHandler('projects')}
+            >
               {t('hero.ctaProjects')} →
             </a>
-            <a href="#contact" className="btn btn-secondary" onClick={createScrollHandler('contact')}>
+            <a
+              href="#contact"
+              className="btn btn-secondary"
+              onClick={createScrollHandler('contact')}
+            >
               {t('hero.ctaContact')}
             </a>
           </div>
@@ -34,7 +41,9 @@ const Hero = () => {
         </div>
 
         <div className="hero-visual">
-          <div className="hero-badge hero-badge-code" aria-hidden="true">&lt;/&gt;</div>
+          <div className="hero-badge hero-badge-code" aria-hidden="true">
+            &lt;/&gt;
+          </div>
           <div className="hero-image-frame">
             <div className="hero-image-aura" aria-hidden="true" />
             <div className="hero-image-morph">

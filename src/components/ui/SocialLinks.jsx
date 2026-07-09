@@ -29,13 +29,17 @@ const SocialLinks = ({ showEmail = true, className = '' }) => {
       Icon: BitbucketIcon,
       external: true,
     },
-    ...(showEmail ? [{
-      id: 'email',
-      href: `mailto:${CONTACT_EMAIL}`,
-      label: t('contact.details.email'),
-      Icon: EmailIcon,
-      external: false,
-    }] : []),
+    ...(showEmail
+      ? [
+          {
+            id: 'email',
+            href: `mailto:${CONTACT_EMAIL}`,
+            label: t('contact.details.email'),
+            Icon: EmailIcon,
+            external: false,
+          },
+        ]
+      : []),
   ]
 
   return (

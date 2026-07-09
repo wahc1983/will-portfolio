@@ -41,11 +41,18 @@ const LanguageSelector = () => {
       >
         <span className="flag">{currentLanguage.flag}</span>
         <span className="language-code">{currentLanguage.code.toUpperCase()}</span>
-        <span className={`arrow ${isOpen ? 'open' : ''}`} aria-hidden="true">▼</span>
+        <span className={`arrow ${isOpen ? 'open' : ''}`} aria-hidden="true">
+          ▼
+        </span>
       </button>
 
       {isOpen && (
-        <div className="language-dropdown" id={listboxId} role="listbox" aria-label={t('language.selector')}>
+        <div
+          className="language-dropdown"
+          id={listboxId}
+          role="listbox"
+          aria-label={t('language.selector')}
+        >
           {languages.map((language) => (
             <button
               key={language.code}

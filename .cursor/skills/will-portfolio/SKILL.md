@@ -13,12 +13,12 @@ Personal portfolio SPA: React + Vite, i18n (es/en/fr), dark/light theme, hosted 
 
 ## Repo & paths
 
-| Item | Value |
-|------|-------|
-| GitHub | `wahc1983/will-portfolio` |
-| Production branch | `main` |
-| Local path | `will-proy/will-portfolio` |
-| Worker name | `will-portfolio` |
+| Item              | Value                      |
+| ----------------- | -------------------------- |
+| GitHub            | `wahc1983/will-portfolio`  |
+| Production branch | `main`                     |
+| Local path        | `will-proy/will-portfolio` |
+| Worker name       | `will-portfolio`           |
 
 ## Deploy (important)
 
@@ -58,25 +58,25 @@ Static SPA — no backend, no database, no runtime API.
 Push to main → Cloudflare Workers Builds → dist/ → CDN
 ```
 
-| Layer | Tech |
-|-------|------|
-| UI | React 19, CSS variables, Flexbox/Grid |
-| Build | Vite 8 + Rolldown, `@vitejs/plugin-react` |
-| i18n | react-i18next, locales in `src/i18n/locales/` |
-| Theme | Context API + `useTheme`, `localStorage`, `prefers-color-scheme` |
-| Hosting | Cloudflare Workers static assets (`wrangler.jsonc`) |
-| Fonts | Google Fonts (Oxanium, Roboto, Space Mono) |
+| Layer   | Tech                                                             |
+| ------- | ---------------------------------------------------------------- |
+| UI      | React 19, CSS variables, Flexbox/Grid                            |
+| Build   | Vite 8 + Rolldown, `@vitejs/plugin-react`                        |
+| i18n    | react-i18next, locales in `src/i18n/locales/`                    |
+| Theme   | Context API + `useTheme`, `localStorage`, `prefers-color-scheme` |
+| Hosting | Cloudflare Workers static assets (`wrangler.jsonc`)              |
+| Fonts   | Google Fonts (Oxanium, Roboto, Space Mono)                       |
 
 ## Key files
 
-| File | Purpose |
-|------|---------|
-| `wrangler.jsonc` | Worker name, SPA `not_found_handling`, observability |
-| `vite.config.js` | `react()` + `cloudflare()` plugins |
-| `public/_headers` | CSP, HSTS, X-Frame-Options, etc. |
-| `src/data/` | Static metadata: experience, projects, skills |
-| `src/i18n/` | i18n config + es/en/fr JSON |
-| `src/constants/contact.js` | Email (obfuscated) + location |
+| File                       | Purpose                                              |
+| -------------------------- | ---------------------------------------------------- |
+| `wrangler.jsonc`           | Worker name, SPA `not_found_handling`, observability |
+| `vite.config.js`           | `react()` + `cloudflare()` plugins                   |
+| `public/_headers`          | CSP, HSTS, X-Frame-Options, etc.                     |
+| `src/data/`                | Static metadata: experience, projects, skills        |
+| `src/i18n/`                | i18n config + es/en/fr JSON                          |
+| `src/constants/contact.js` | Email (obfuscated) + location                        |
 
 ## Content editing
 

@@ -36,20 +36,45 @@ const Header = () => {
         <div className="logo">
           <a href="#home" onClick={handleScroll('home')} className="logo-link">
             <div className="header-logo-icon">
-              <span>W</span><span className="logo-suffix">AHC</span>
+              <span>W</span>
+              <span className="logo-suffix">AHC</span>
             </div>
             <h2>{t('header.title')}</h2>
           </a>
         </div>
-        
+
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`} aria-label="Main navigation">
           <ul>
-            <li><a href="#home" onClick={handleScroll('home')}>{t('nav.home')}</a></li>
-            <li><a href="#about" onClick={handleScroll('about')}>{t('nav.about')}</a></li>
-            <li><a href="#experience" onClick={handleScroll('experience')}>{t('nav.experience')}</a></li>
-            <li><a href="#skills" onClick={handleScroll('skills')}>{t('nav.skills')}</a></li>
-            <li><a href="#projects" onClick={handleScroll('projects')}>{t('nav.projects')}</a></li>
-            <li><a href="#contact" onClick={handleScroll('contact')}>{t('nav.contact')}</a></li>
+            <li>
+              <a href="#home" onClick={handleScroll('home')}>
+                {t('nav.home')}
+              </a>
+            </li>
+            <li>
+              <a href="#about" onClick={handleScroll('about')}>
+                {t('nav.about')}
+              </a>
+            </li>
+            <li>
+              <a href="#experience" onClick={handleScroll('experience')}>
+                {t('nav.experience')}
+              </a>
+            </li>
+            <li>
+              <a href="#skills" onClick={handleScroll('skills')}>
+                {t('nav.skills')}
+              </a>
+            </li>
+            <li>
+              <a href="#projects" onClick={handleScroll('projects')}>
+                {t('nav.projects')}
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={handleScroll('contact')}>
+                {t('nav.contact')}
+              </a>
+            </li>
           </ul>
         </nav>
 

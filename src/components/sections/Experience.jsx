@@ -31,7 +31,9 @@ const Experience = () => {
                   <p>{exp.description}</p>
                   <div className="technologies">
                     {exp.technologies.map((tech) => (
-                      <span key={tech} className="tech-tag">{tech}</span>
+                      <span key={tech} className="tech-tag">
+                        {tech}
+                      </span>
                     ))}
                   </div>
                 </div>

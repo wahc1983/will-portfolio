@@ -87,7 +87,9 @@
   object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 8px 28px var(--glow-color));
-  transition: transform 0.4s ease, filter 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
 }
 .timeline-illustration--portrait {
   max-height: 360px;

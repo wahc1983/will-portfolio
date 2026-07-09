@@ -35,10 +35,10 @@ Si no hay preferencia guardada, se usa `prefers-color-scheme` del sistema. El to
 
 ### Paleta de colores (NgRx)
 
-| Token | Oscuro | Claro |
-|-------|--------|-------|
-| Primary | `#fface6` | `#a91794` |
-| Secondary | `#a91794` | `#cf8fc5` |
+| Token      | Oscuro    | Claro     |
+| ---------- | --------- | --------- |
+| Primary    | `#fface6` | `#a91794` |
+| Secondary  | `#a91794` | `#cf8fc5` |
 | Background | `#17111a` | `#f5f3f4` |
 
 Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
@@ -53,16 +53,19 @@ Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
 ### Instalación
 
 1. Navega al directorio del proyecto:
+
    ```bash
    cd will-portfolio
    ```
 
 2. Instala las dependencias:
+
    ```bash
    npm install
    ```
 
 3. Inicia el servidor de desarrollo:
+
    ```bash
    npm run dev
    ```
@@ -71,13 +74,13 @@ Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
 
 ## Scripts disponibles
 
-| Comando | Descripción |
-|---------|-------------|
-| `npm run dev` | Servidor de desarrollo Vite |
-| `npm run build` | Build de producción |
-| `npm run lint` | ESLint |
-| `npm run preview` | Build + preview local con Wrangler |
-| `npm run deploy` | Build + despliegue a Cloudflare Workers |
+| Comando           | Descripción                             |
+| ----------------- | --------------------------------------- |
+| `npm run dev`     | Servidor de desarrollo Vite             |
+| `npm run build`   | Build de producción                     |
+| `npm run lint`    | ESLint                                  |
+| `npm run preview` | Build + preview local con Wrangler      |
+| `npm run deploy`  | Build + despliegue a Cloudflare Workers |
 
 ## Personalización
 
@@ -94,11 +97,11 @@ Ver `src/index.css` y `THEMES.md` para personalizar variables CSS.
 
 Las imágenes optimizadas (WebP) viven en `src/assets/illustrations/`:
 
-| Archivo | Uso |
-|---------|-----|
-| `hero-william.webp` | Sección Hero |
-| `experience-*.webp` | Timeline de experiencia |
-| `contact-william-light.webp` / `contact-william-dark.webp` | Contacto (según tema) |
+| Archivo                                                    | Uso                     |
+| ---------------------------------------------------------- | ----------------------- |
+| `hero-william.webp`                                        | Sección Hero            |
+| `experience-*.webp`                                        | Timeline de experiencia |
+| `contact-william-light.webp` / `contact-william-dark.webp` | Contacto (según tema)   |
 
 ### Agregar nuevos idiomas
 

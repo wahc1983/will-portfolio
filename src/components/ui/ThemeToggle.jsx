@@ -16,9 +16,7 @@ const ThemeToggle = () => {
     >
       <div className="theme-toggle-track">
         <div className={`theme-toggle-thumb ${isDarkMode ? 'dark' : 'light'}`}>
-          <span className="theme-icon">
-            {isDarkMode ? '🌙' : '☀️'}
-          </span>
+          <span className="theme-icon">{isDarkMode ? '🌙' : '☀️'}</span>
         </div>
       </div>
     </button>

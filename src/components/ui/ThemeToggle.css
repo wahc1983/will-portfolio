@@ -77,16 +77,16 @@
     width: 44px;
     height: 24px;
   }
-  
+
   .theme-toggle-thumb {
     width: 20px;
     height: 20px;
   }
-  
+
   .theme-toggle-thumb.dark {
     left: 20px;
   }
-  
+
   .theme-icon {
     font-size: 11px;
   }

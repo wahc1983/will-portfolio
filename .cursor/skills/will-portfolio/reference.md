@@ -4,12 +4,12 @@
 
 ## Repository
 
-| Field | Value |
-|-------|-------|
-| Remote | `https://github.com/wahc1983/will-portfolio` |
-| Default branch | `main` |
-| Package name | `will_portfolio` |
-| License | MIT |
+| Field          | Value                                        |
+| -------------- | -------------------------------------------- |
+| Remote         | `https://github.com/wahc1983/will-portfolio` |
+| Default branch | `main`                                       |
+| Package name   | `will_portfolio`                             |
+| License        | MIT                                          |
 
 ### Remote branches (snapshot)
 
@@ -31,11 +31,11 @@ Native Git integration between GitHub and Cloudflare. No `.github/workflows/` in
 
 ### Pipeline (per Cloudflare docs)
 
-| Step | Default command | Notes |
-|------|-----------------|-------|
-| Build | `npm run build` | Runs `vite build`; outputs `dist/` including `wrangler.json` |
-| Deploy (production) | `npx wrangler deploy` | Uses `wrangler.jsonc` + built assets |
-| Deploy (non-prod branches) | `npx wrangler versions upload` | Preview URLs; not actively used (direct pushes to `main`) |
+| Step                       | Default command                | Notes                                                        |
+| -------------------------- | ------------------------------ | ------------------------------------------------------------ |
+| Build                      | `npm run build`                | Runs `vite build`; outputs `dist/` including `wrangler.json` |
+| Deploy (production)        | `npx wrangler deploy`          | Uses `wrangler.jsonc` + built assets                         |
+| Deploy (non-prod branches) | `npx wrangler versions upload` | Preview URLs; not actively used (direct pushes to `main`)    |
 
 Build settings live in Cloudflare dashboard: Worker → Settings → Build.
 
@@ -62,7 +62,7 @@ Build settings live in Cloudflare dashboard: Worker → Settings → Build.
   "compatibility_date": "2026-04-14",
   "observability": { "enabled": true },
   "assets": { "not_found_handling": "single-page-application" },
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": ["nodejs_compat"],
 }
 ```
 
@@ -72,13 +72,13 @@ Build settings live in Cloudflare dashboard: Worker → Settings → Build.
 
 ## Build toolchain
 
-| Package | Version (approx) |
-|---------|------------------|
-| react / react-dom | ^19.2.0 |
-| vite | ^8.0.8 (rolldown-vite) |
-| wrangler | ^4.82.2 |
-| @cloudflare/vite-plugin | ^1.32.2 |
-| react-i18next / i18next | ^17 / ^26 |
+| Package                 | Version (approx)       |
+| ----------------------- | ---------------------- |
+| react / react-dom       | ^19.2.0                |
+| vite                    | ^8.0.8 (rolldown-vite) |
+| wrangler                | ^4.82.2                |
+| @cloudflare/vite-plugin | ^1.32.2                |
+| react-i18next / i18next | ^17 / ^26              |
 
 Production build output (snapshot): ~276 KB JS (~87 KB gzip), ~24 KB CSS (~5.5 KB gzip), WebP illustrations 13–55 KB each.
 
@@ -131,13 +131,13 @@ src/
 
 ## Scripts
 
-| Script | Command |
-|--------|---------|
-| `dev` | `vite` |
-| `build` | `vite build` |
-| `lint` | `eslint .` |
-| `preview` | `npm run build && wrangler dev` |
-| `deploy` | `npm run build && wrangler deploy` |
+| Script    | Command                            |
+| --------- | ---------------------------------- |
+| `dev`     | `vite`                             |
+| `build`   | `vite build`                       |
+| `lint`    | `eslint .`                         |
+| `preview` | `npm run build && wrangler dev`    |
+| `deploy`  | `npm run build && wrangler deploy` |
 
 ## What's intentionally absent
 
@@ -155,11 +155,11 @@ src/
 
 Overall health: **good** for a personal portfolio.
 
-| Area | Status |
-|------|--------|
-| Infra / deploy | OK — Cloudflare Workers Builds on `main` |
-| Code structure | OK — clear separation |
-| Security headers | OK — CSP could be tightened later |
-| SEO / shareability | Improveable |
-| CI lint gate | Not configured |
-| Performance | OK — minor lazy-load opportunity |
+| Area               | Status                                   |
+| ------------------ | ---------------------------------------- |
+| Infra / deploy     | OK — Cloudflare Workers Builds on `main` |
+| Code structure     | OK — clear separation                    |
+| Security headers   | OK — CSP could be tightened later        |
+| SEO / shareability | Improveable                              |
+| CI lint gate       | Not configured                           |
+| Performance        | OK — minor lazy-load opportunity         |

@@ -23,10 +23,7 @@ const seoFilesPlugin = () => ({
 </urlset>
 `
       writeFileSync(join(distDir, 'sitemap.xml'), sitemap)
-      writeFileSync(
-        robotsPath,
-        `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`,
-      )
+      writeFileSync(robotsPath, `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n`)
       return
     }
 

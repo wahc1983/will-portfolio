@@ -39,7 +39,9 @@ const Contact = () => {
                   </span>
                   <div>
                     <span className="contact-label">{t('contact.details.email')}</span>
-                    <a href={`mailto:${CONTACT_EMAIL}`} className="contact-value">{CONTACT_EMAIL}</a>
+                    <a href={`mailto:${CONTACT_EMAIL}`} className="contact-value">
+                      {CONTACT_EMAIL}
+                    </a>
                   </div>
                 </li>
                 <li>

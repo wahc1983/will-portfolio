@@ -54,7 +54,11 @@ export const useDocumentHead = () => {
     setMetaContent('meta[property="og:type"]', { property: 'og:type' }, 'website')
     setMetaContent('meta[property="og:url"]', { property: 'og:url' }, pageUrl)
     setMetaContent('meta[property="og:image"]', { property: 'og:image' }, imageUrl)
-    setMetaContent('meta[property="og:image:alt"]', { property: 'og:image:alt' }, t('meta.ogImageAlt'))
+    setMetaContent(
+      'meta[property="og:image:alt"]',
+      { property: 'og:image:alt' },
+      t('meta.ogImageAlt')
+    )
     setMetaContent('meta[property="og:locale"]', { property: 'og:locale' }, localeMap[lang] || lang)
     setMetaContent('meta[name="twitter:card"]', { name: 'twitter:card' }, 'summary_large_image')
     setMetaContent('meta[name="twitter:title"]', { name: 'twitter:title' }, title)

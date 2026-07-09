@@ -30,13 +30,23 @@ const Projects = () => {
                 <p>{project.description}</p>
                 <div className="project-technologies">
                   {project.technologies.map((tech) => (
-                    <span key={tech} className="tech-tag">{tech}</span>
+                    <span key={tech} className="tech-tag">
+                      {tech}
+                    </span>
                   ))}
                 </div>
                 {project.repoUrl && (
                   <div className="project-links">
-                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-                      {project.repoUrl.includes('bitbucket') ? t('contact.social.bitbucket') : t('projects.buttons.github')} →
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-secondary"
+                    >
+                      {project.repoUrl.includes('bitbucket')
+                        ? t('contact.social.bitbucket')
+                        : t('projects.buttons.github')}{' '}
+                      →
                     </a>
                   </div>
                 )}
