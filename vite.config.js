@@ -1,7 +1,7 @@
 import { writeFileSync } from 'node:fs'
 import { cwd, env } from 'node:process'
 import { join } from 'node:path'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 import { cloudflare } from '@cloudflare/vite-plugin'
 
@@ -33,5 +33,9 @@ const seoFilesPlugin = () => ({
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), cloudflare(), seoFilesPlugin()],
+  plugins: [react(), ...(env.VITEST ? [] : [cloudflare(), seoFilesPlugin()])],
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/test/setup.js'],
+  },
 })
