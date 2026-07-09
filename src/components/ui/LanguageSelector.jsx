@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useId } from 'react'
 import { useTranslation } from 'react-i18next'
 import useClickOutside from '../../hooks/useClickOutside'
 import { AVAILABLE_LANGUAGES } from '../../i18n/config'
@@ -7,6 +7,7 @@ import './LanguageSelector.css'
 const LanguageSelector = () => {
   const { i18n, t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
+  const listboxId = useId()
 
   const closeDropdown = useCallback(() => {
     setIsOpen(false)
@@ -31,19 +32,26 @@ const LanguageSelector = () => {
     <div className="language-selector" ref={dropdownRef}>
       <button
         className="language-button"
+        type="button"
         onClick={() => setIsOpen(!isOpen)}
         aria-label={t('language.selector')}
+        aria-expanded={isOpen}
+        aria-haspopup="listbox"
+        aria-controls={listboxId}
       >
         <span className="flag">{currentLanguage.flag}</span>
         <span className="language-code">{currentLanguage.code.toUpperCase()}</span>
-        <span className={`arrow ${isOpen ? 'open' : ''}`}>▼</span>
+        <span className={`arrow ${isOpen ? 'open' : ''}`} aria-hidden="true">▼</span>
       </button>
 
       {isOpen && (
-        <div className="language-dropdown">
+        <div className="language-dropdown" id={listboxId} role="listbox" aria-label={t('language.selector')}>
           {languages.map((language) => (
             <button
               key={language.code}
+              type="button"
+              role="option"
+              aria-selected={i18n.language === language.code}
               className={`language-option ${i18n.language === language.code ? 'active' : ''}`}
               onClick={() => handleLanguageChange(language.code)}
             >

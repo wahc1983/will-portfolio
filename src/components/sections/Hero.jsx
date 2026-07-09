@@ -2,15 +2,11 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import heroImage from '../../assets/illustrations/hero-william.webp'
 import SocialLinks from '../ui/SocialLinks'
+import { createScrollHandler } from '../../utils/scrollToSection'
 import './Hero.css'
 
 const Hero = () => {
   const { t } = useTranslation()
-
-  const scrollTo = (e, id) => {
-    e.preventDefault()
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
-  }
 
   return (
     <section id="home" className="hero">
@@ -27,10 +23,10 @@ const Hero = () => {
           </h1>
           <p className="hero-bio">{t('hero.bio')}</p>
           <div className="hero-ctas">
-            <a href="#projects" className="btn btn-primary" onClick={(e) => scrollTo(e, 'projects')}>
+            <a href="#projects" className="btn btn-primary" onClick={createScrollHandler('projects')}>
               {t('hero.ctaProjects')} →
             </a>
-            <a href="#contact" className="btn btn-secondary" onClick={(e) => scrollTo(e, 'contact')}>
+            <a href="#contact" className="btn btn-secondary" onClick={createScrollHandler('contact')}>
               {t('hero.ctaContact')}
             </a>
           </div>
@@ -42,7 +38,12 @@ const Hero = () => {
           <div className="hero-image-frame">
             <div className="hero-image-aura" aria-hidden="true" />
             <div className="hero-image-morph">
-              <img src={heroImage} alt={t('hero.imageAlt')} className="hero-image" />
+              <img
+                src={heroImage}
+                alt={t('hero.imageAlt')}
+                className="hero-image"
+                fetchPriority="high"
+              />
             </div>
           </div>
         </div>

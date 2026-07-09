@@ -30,7 +30,7 @@ Personal portfolio SPA: React + Vite, i18n (es/en/fr), dark/light theme, hosted 
   1. **Build command:** `npm run build` → `vite build` → `dist/`
   2. **Deploy command:** `npx wrangler deploy` (default; separate from build)
 
-Do **not** suggest adding GitHub Actions for deploy unless the user explicitly wants extra checks (e.g. lint on PRs). `npm run deploy` is for **local/manual** use only (`build && wrangler deploy`); CI does not use it (avoids double build).
+Do **not** suggest adding GitHub Actions unless the user explicitly asks. `npm run deploy` is for **local/manual** use only (`build && wrangler deploy`); Workers Builds does not use it (avoids double build).
 
 Initial Cloudflare setup: PR #1 (`cloudflare/workers-autoconfig` branch), merged 2026-04-14. Bot added `wrangler.jsonc`, `@cloudflare/vite-plugin`, and Wrangler deps.
 
@@ -99,13 +99,9 @@ Push to main → Cloudflare Workers Builds → dist/ → CDN
 
 Not blockers — mention only when relevant:
 
-- `index.html` has `lang="en"` but default i18n is Spanish; no dynamic `document.documentElement.lang`
-- No Open Graph / Twitter meta tags
-- No `robots.txt` / `sitemap.xml`
-- Images below fold lack `loading="lazy"`
-- ESLint not run in Cloudflare Builds (only build + deploy)
-- No analytics (Cloudflare Web Analytics would fit)
-- Footer anchor links lack smooth-scroll (Header has custom scroll logic)
+- Set `VITE_SITE_URL` in Cloudflare Builds for absolute `sitemap.xml`
+- Set `VITE_CF_BEACON_TOKEN` in Cloudflare Builds for Web Analytics
+- No analytics until beacon token is configured
 
 ## Additional resources
 

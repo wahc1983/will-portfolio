@@ -24,6 +24,8 @@ const Contact = () => {
               src={contactImage}
               alt={t('contact.imageAlt')}
               className="contact-illustration"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 

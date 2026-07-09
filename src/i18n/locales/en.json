@@ -7,7 +7,8 @@
     "projects": "Projects",
     "contact": "Contact",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content"
   },
   "hero": {
     "tag": "Senior Full Stack Developer",
@@ -21,6 +22,11 @@
   },
   "header": {
     "title": "William Huertas"
+  },
+  "meta": {
+    "title": "William Huertas - Senior Full Stack Developer",
+    "description": "William Huertas portfolio: senior full stack developer with 12+ years of experience in Angular, Ruby on Rails, and Node.js.",
+    "ogImageAlt": "William Huertas - Full Stack Developer"
   },
   "about": {
     "title": "About Me",

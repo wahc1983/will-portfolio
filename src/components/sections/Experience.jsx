@@ -24,9 +24,6 @@ const Experience = () => {
           {experiences.map((exp) => (
             <div key={exp.company} className="timeline-item">
               <div className="timeline-content">
-                <div className="timeline-image timeline-image--mobile">
-                  <img src={exp.image} alt={exp.title} />
-                </div>
                 <div className="timeline-body">
                   <h3>{exp.title}</h3>
                   <h4>{exp.company}</h4>
@@ -44,6 +41,8 @@ const Experience = () => {
                   src={exp.image}
                   alt={exp.title}
                   className={`timeline-illustration ${exp.imageClass}`}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>
